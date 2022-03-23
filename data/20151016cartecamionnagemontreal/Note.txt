@@ -1,0 +1,39 @@
+Ville de Montréal
+Tous droits réservés. Ville de Montréal. 2015
+Direction des transports
+Division du développement des transports
+
+Fichier concernant les données ouvertes concernant les règlements de camionnage de la Ville de Montréal.
+
+Mis à jour le 16 octobre 2015.
+
+Dictionnaire des données :
+
+NOM
+TYPE
+COMMENTAIRE
+
+====================================================================
+ID_TRC
+FLOAT
+identification du tronçon 
+
+NOM_VOIE
+CHARACTER(50)
+Nom (toponyme) de la voie
+
+Reglement_No
+CHARACTER(30)
+Numéro du règlement (si en vigueur)
+
+Class_Camion
+SMALL INTEGER
+1 = route permise en tout temps
+2 = route permise de jour mais intedite de nuit (19h à 7h)
+3 = zone interdite excepté pour livraison locale
+
+Appr_MTQ
+LOGICAL
+=1 si le règlement est approuvé par le MTQ
+
+=====================================================================

@@ -1,0 +1,242 @@
+Gravite,Environnement,Route,Vitesse,count
+GRAVE_MORTEL,Scolaire,Chemin public: artère principale,50 Km/h,1
+GRAVE_MORTEL,Residentiel,Chemin public: bretelle/collecteur d’autoroute/voie de service,50 Km/h,1
+GRAVE_MORTEL,Residentiel,Chemin public: artère principale,30 Km/h,1
+GRAVE_MORTEL,Residentiel,Chemin public: artère principale,40 Km/h,2
+GRAVE_MORTEL,Residentiel,Chemin public: artère principale,50 Km/h,11
+GRAVE_MORTEL,Residentiel,Chemin public: rue résidentielle,30 Km/h,5
+GRAVE_MORTEL,Residentiel,Chemin public: rue résidentielle,40 Km/h,7
+GRAVE_MORTEL,Residentiel,Chemin public: rue résidentielle,50 Km/h,5
+GRAVE_MORTEL,Residentiel,Chemin public: ruelle,40 Km/h,1
+GRAVE_MORTEL,Commercial,Chemin public: bretelle/collecteur d’autoroute/voie de service,50 Km/h,1
+GRAVE_MORTEL,Commercial,Chemin public: bretelle/collecteur d’autoroute/voie de service,70 Km/h,1
+GRAVE_MORTEL,Commercial,Chemin public: route numérotée,50 Km/h,1
+GRAVE_MORTEL,Commercial,Chemin public: artère principale,30 Km/h,2
+GRAVE_MORTEL,Commercial,Chemin public: artère principale,40 Km/h,8
+GRAVE_MORTEL,Commercial,Chemin public: artère principale,50 Km/h,48
+GRAVE_MORTEL,Commercial,Chemin public: artère principale,60 Km/h,2
+GRAVE_MORTEL,Commercial,Chemin public: rue résidentielle,30 Km/h,1
+GRAVE_MORTEL,Commercial,Chemin public: rue résidentielle,50 Km/h,1
+GRAVE_MORTEL,Commercial,Chemin public: chemin/rang,50 Km/h,1
+GRAVE_MORTEL,Commercial,Hors chemin public: terrain de stationnement,20 Km/h,1
+GRAVE_MORTEL,Commercial,Hors chemin public: terrain privé,50 Km/h,1
+GRAVE_MORTEL,Industriel,Chemin public: bretelle/collecteur d’autoroute/voie de service,50 Km/h,2
+GRAVE_MORTEL,Industriel,Chemin public: bretelle/collecteur d’autoroute/voie de service,70 Km/h,1
+GRAVE_MORTEL,Industriel,Chemin public: artère principale,50 Km/h,11
+GRAVE_MORTEL,Industriel,Chemin public: rue résidentielle,30 Km/h,1
+GRAVE_MORTEL,Industriel,Chemin public: autre,50 Km/h,1
+GRAVE_MORTEL,Industriel,Hors chemin public: terrain de stationnement,10 Km/h,1
+GRAVE_MORTEL,Industriel,Hors chemin public: terrain privé,10 Km/h,1
+GRAVE_MORTEL,Autre,Chemin public: artère principale,50 Km/h,1
+LEGER_MATERIEL,Scolaire,Chemin public: bretelle/collecteur d’autoroute/voie de service,50 Km/h,4
+LEGER_MATERIEL,Scolaire,Chemin public: bretelle/collecteur d’autoroute/voie de service,60 Km/h,3
+LEGER_MATERIEL,Scolaire,Chemin public: route numérotée,50 Km/h,2
+LEGER_MATERIEL,Scolaire,Chemin public: artère principale,30 Km/h,13
+LEGER_MATERIEL,Scolaire,Chemin public: artère principale,40 Km/h,13
+LEGER_MATERIEL,Scolaire,Chemin public: artère principale,50 Km/h,34
+LEGER_MATERIEL,Scolaire,Chemin public: rue résidentielle,30 Km/h,45
+LEGER_MATERIEL,Scolaire,Chemin public: rue résidentielle,40 Km/h,26
+LEGER_MATERIEL,Scolaire,Chemin public: rue résidentielle,50 Km/h,19
+LEGER_MATERIEL,Scolaire,Chemin public: chemin/rang,30 Km/h,1
+LEGER_MATERIEL,Scolaire,Chemin public: chemin/rang,50 Km/h,1
+LEGER_MATERIEL,Scolaire,Chemin public: autre,40 Km/h,2
+LEGER_MATERIEL,Scolaire,Chemin public: autre,50 Km/h,1
+LEGER_MATERIEL,Scolaire,Hors chemin public: terrain de stationnement,10 Km/h,1
+LEGER_MATERIEL,Scolaire,Hors chemin public: terrain de stationnement,20 Km/h,1
+LEGER_MATERIEL,Scolaire,Hors chemin public: terrain de stationnement,30 Km/h,1
+LEGER_MATERIEL,Scolaire,Hors chemin public: terrain de stationnement,40 Km/h,1
+LEGER_MATERIEL,Scolaire,Hors chemin public: terrain de stationnement,50 Km/h,2
+LEGER_MATERIEL,Scolaire,Hors chemin public: terrain privé,10 Km/h,1
+LEGER_MATERIEL,Scolaire,Hors chemin public: terrain privé,30 Km/h,2
+LEGER_MATERIEL,Scolaire,Hors chemin public: terrain privé,40 Km/h,1
+LEGER_MATERIEL,Residentiel,Chemin public: bretelle/collecteur d’autoroute/voie de service,30 Km/h,1
+LEGER_MATERIEL,Residentiel,Chemin public: bretelle/collecteur d’autoroute/voie de service,40 Km/h,5
+LEGER_MATERIEL,Residentiel,Chemin public: bretelle/collecteur d’autoroute/voie de service,50 Km/h,44
+LEGER_MATERIEL,Residentiel,Chemin public: bretelle/collecteur d’autoroute/voie de service,60 Km/h,1
+LEGER_MATERIEL,Residentiel,Chemin public: route numérotée,10 Km/h,1
+LEGER_MATERIEL,Residentiel,Chemin public: route numérotée,30 Km/h,6
+LEGER_MATERIEL,Residentiel,Chemin public: route numérotée,40 Km/h,10
+LEGER_MATERIEL,Residentiel,Chemin public: route numérotée,50 Km/h,54
+LEGER_MATERIEL,Residentiel,Chemin public: route numérotée,100 Km/h,1
+LEGER_MATERIEL,Residentiel,Chemin public: artère principale,30 Km/h,45
+LEGER_MATERIEL,Residentiel,Chemin public: artère principale,40 Km/h,211
+LEGER_MATERIEL,Residentiel,Chemin public: artère principale,50 Km/h,968
+LEGER_MATERIEL,Residentiel,Chemin public: artère principale,60 Km/h,13
+LEGER_MATERIEL,Residentiel,Chemin public: artère principale,70 Km/h,1
+LEGER_MATERIEL,Residentiel,Chemin public: rue résidentielle,10 Km/h,5
+LEGER_MATERIEL,Residentiel,Chemin public: rue résidentielle,20 Km/h,3
+LEGER_MATERIEL,Residentiel,Chemin public: rue résidentielle,30 Km/h,449
+LEGER_MATERIEL,Residentiel,Chemin public: rue résidentielle,40 Km/h,1357
+LEGER_MATERIEL,Residentiel,Chemin public: rue résidentielle,50 Km/h,852
+LEGER_MATERIEL,Residentiel,Chemin public: rue résidentielle,60 Km/h,2
+LEGER_MATERIEL,Residentiel,Chemin public: rue résidentielle,70 Km/h,1
+LEGER_MATERIEL,Residentiel,Chemin public: rue résidentielle,80 Km/h,1
+LEGER_MATERIEL,Residentiel,Chemin public: rue résidentielle,90 Km/h,2
+LEGER_MATERIEL,Residentiel,Chemin public: rue résidentielle,100 Km/h,1
+LEGER_MATERIEL,Residentiel,Chemin public: chemin/rang,30 Km/h,2
+LEGER_MATERIEL,Residentiel,Chemin public: chemin/rang,40 Km/h,5
+LEGER_MATERIEL,Residentiel,Chemin public: chemin/rang,50 Km/h,6
+LEGER_MATERIEL,Residentiel,Chemin public: chemin/rang,70 Km/h,1
+LEGER_MATERIEL,Residentiel,Chemin public: ruelle,10 Km/h,12
+LEGER_MATERIEL,Residentiel,Chemin public: ruelle,20 Km/h,4
+LEGER_MATERIEL,Residentiel,Chemin public: ruelle,30 Km/h,15
+LEGER_MATERIEL,Residentiel,Chemin public: ruelle,40 Km/h,25
+LEGER_MATERIEL,Residentiel,Chemin public: ruelle,50 Km/h,9
+LEGER_MATERIEL,Residentiel,Chemin public: autre,40 Km/h,3
+LEGER_MATERIEL,Residentiel,Chemin public: autre,50 Km/h,4
+LEGER_MATERIEL,Residentiel,Hors chemin public: terrain de stationnement,10 Km/h,1
+LEGER_MATERIEL,Residentiel,Hors chemin public: terrain de stationnement,20 Km/h,1
+LEGER_MATERIEL,Residentiel,Hors chemin public: terrain de stationnement,30 Km/h,1
+LEGER_MATERIEL,Residentiel,Hors chemin public: terrain de stationnement,40 Km/h,4
+LEGER_MATERIEL,Residentiel,Hors chemin public: terrain de stationnement,50 Km/h,3
+LEGER_MATERIEL,Residentiel,Hors chemin public: terrain privé,10 Km/h,3
+LEGER_MATERIEL,Residentiel,Hors chemin public: terrain privé,20 Km/h,2
+LEGER_MATERIEL,Residentiel,Hors chemin public: terrain privé,30 Km/h,4
+LEGER_MATERIEL,Residentiel,Hors chemin public: terrain privé,40 Km/h,9
+LEGER_MATERIEL,Residentiel,Hors chemin public: terrain privé,50 Km/h,6
+LEGER_MATERIEL,Residentiel,Hors chemin public: chemin privé,30 Km/h,1
+LEGER_MATERIEL,Residentiel,Hors chemin public: sentier balisé,40 Km/h,1
+LEGER_MATERIEL,Commercial,Chemin public: bretelle/collecteur d’autoroute/voie de service,30 Km/h,5
+LEGER_MATERIEL,Commercial,Chemin public: bretelle/collecteur d’autoroute/voie de service,40 Km/h,17
+LEGER_MATERIEL,Commercial,Chemin public: bretelle/collecteur d’autoroute/voie de service,50 Km/h,585
+LEGER_MATERIEL,Commercial,Chemin public: bretelle/collecteur d’autoroute/voie de service,60 Km/h,11
+LEGER_MATERIEL,Commercial,Chemin public: bretelle/collecteur d’autoroute/voie de service,70 Km/h,21
+LEGER_MATERIEL,Commercial,Chemin public: route numérotée,30 Km/h,2
+LEGER_MATERIEL,Commercial,Chemin public: route numérotée,40 Km/h,16
+LEGER_MATERIEL,Commercial,Chemin public: route numérotée,50 Km/h,154
+LEGER_MATERIEL,Commercial,Chemin public: route numérotée,60 Km/h,14
+LEGER_MATERIEL,Commercial,Chemin public: route numérotée,70 Km/h,4
+LEGER_MATERIEL,Commercial,Chemin public: route numérotée,100 Km/h,1
+LEGER_MATERIEL,Commercial,Chemin public: artère principale,10 Km/h,5
+LEGER_MATERIEL,Commercial,Chemin public: artère principale,20 Km/h,8
+LEGER_MATERIEL,Commercial,Chemin public: artère principale,30 Km/h,89
+LEGER_MATERIEL,Commercial,Chemin public: artère principale,40 Km/h,524
+LEGER_MATERIEL,Commercial,Chemin public: artère principale,50 Km/h,3760
+LEGER_MATERIEL,Commercial,Chemin public: artère principale,60 Km/h,107
+LEGER_MATERIEL,Commercial,Chemin public: artère principale,70 Km/h,23
+LEGER_MATERIEL,Commercial,Chemin public: artère principale,80 Km/h,5
+LEGER_MATERIEL,Commercial,Chemin public: artère principale,90 Km/h,2
+LEGER_MATERIEL,Commercial,Chemin public: artère principale,100 Km/h,1
+LEGER_MATERIEL,Commercial,Chemin public: rue résidentielle,10 Km/h,2
+LEGER_MATERIEL,Commercial,Chemin public: rue résidentielle,20 Km/h,3
+LEGER_MATERIEL,Commercial,Chemin public: rue résidentielle,30 Km/h,51
+LEGER_MATERIEL,Commercial,Chemin public: rue résidentielle,40 Km/h,205
+LEGER_MATERIEL,Commercial,Chemin public: rue résidentielle,50 Km/h,314
+LEGER_MATERIEL,Commercial,Chemin public: rue résidentielle,60 Km/h,3
+LEGER_MATERIEL,Commercial,Chemin public: rue résidentielle,70 Km/h,2
+LEGER_MATERIEL,Commercial,Chemin public: rue résidentielle,80 Km/h,1
+LEGER_MATERIEL,Commercial,Chemin public: rue résidentielle,90 Km/h,1
+LEGER_MATERIEL,Commercial,Chemin public: chemin/rang,30 Km/h,2
+LEGER_MATERIEL,Commercial,Chemin public: chemin/rang,40 Km/h,6
+LEGER_MATERIEL,Commercial,Chemin public: chemin/rang,50 Km/h,30
+LEGER_MATERIEL,Commercial,Chemin public: ruelle,10 Km/h,4
+LEGER_MATERIEL,Commercial,Chemin public: ruelle,20 Km/h,5
+LEGER_MATERIEL,Commercial,Chemin public: ruelle,30 Km/h,12
+LEGER_MATERIEL,Commercial,Chemin public: ruelle,40 Km/h,8
+LEGER_MATERIEL,Commercial,Chemin public: ruelle,50 Km/h,28
+LEGER_MATERIEL,Commercial,Chemin public: autre,10 Km/h,2
+LEGER_MATERIEL,Commercial,Chemin public: autre,20 Km/h,1
+LEGER_MATERIEL,Commercial,Chemin public: autre,30 Km/h,11
+LEGER_MATERIEL,Commercial,Chemin public: autre,40 Km/h,10
+LEGER_MATERIEL,Commercial,Chemin public: autre,50 Km/h,71
+LEGER_MATERIEL,Commercial,Hors chemin public: terrain de stationnement,10 Km/h,32
+LEGER_MATERIEL,Commercial,Hors chemin public: terrain de stationnement,20 Km/h,10
+LEGER_MATERIEL,Commercial,Hors chemin public: terrain de stationnement,30 Km/h,23
+LEGER_MATERIEL,Commercial,Hors chemin public: terrain de stationnement,40 Km/h,19
+LEGER_MATERIEL,Commercial,Hors chemin public: terrain de stationnement,50 Km/h,43
+LEGER_MATERIEL,Commercial,Hors chemin public: terrain de stationnement,70 Km/h,2
+LEGER_MATERIEL,Commercial,Hors chemin public: terrain privé,10 Km/h,14
+LEGER_MATERIEL,Commercial,Hors chemin public: terrain privé,20 Km/h,1
+LEGER_MATERIEL,Commercial,Hors chemin public: terrain privé,30 Km/h,8
+LEGER_MATERIEL,Commercial,Hors chemin public: terrain privé,40 Km/h,6
+LEGER_MATERIEL,Commercial,Hors chemin public: terrain privé,50 Km/h,25
+LEGER_MATERIEL,Commercial,Hors chemin public: autre,10 Km/h,2
+LEGER_MATERIEL,Commercial,Hors chemin public: autre,30 Km/h,1
+LEGER_MATERIEL,Commercial,Hors chemin public: autre,40 Km/h,1
+LEGER_MATERIEL,Industriel,Chemin public: bretelle/collecteur d’autoroute/voie de service,30 Km/h,7
+LEGER_MATERIEL,Industriel,Chemin public: bretelle/collecteur d’autoroute/voie de service,40 Km/h,8
+LEGER_MATERIEL,Industriel,Chemin public: bretelle/collecteur d’autoroute/voie de service,50 Km/h,308
+LEGER_MATERIEL,Industriel,Chemin public: bretelle/collecteur d’autoroute/voie de service,60 Km/h,28
+LEGER_MATERIEL,Industriel,Chemin public: bretelle/collecteur d’autoroute/voie de service,70 Km/h,17
+LEGER_MATERIEL,Industriel,Chemin public: bretelle/collecteur d’autoroute/voie de service,90 Km/h,2
+LEGER_MATERIEL,Industriel,Chemin public: route numérotée,30 Km/h,1
+LEGER_MATERIEL,Industriel,Chemin public: route numérotée,40 Km/h,5
+LEGER_MATERIEL,Industriel,Chemin public: route numérotée,50 Km/h,52
+LEGER_MATERIEL,Industriel,Chemin public: route numérotée,60 Km/h,9
+LEGER_MATERIEL,Industriel,Chemin public: route numérotée,70 Km/h,1
+LEGER_MATERIEL,Industriel,Chemin public: artère principale,10 Km/h,1
+LEGER_MATERIEL,Industriel,Chemin public: artère principale,20 Km/h,1
+LEGER_MATERIEL,Industriel,Chemin public: artère principale,30 Km/h,15
+LEGER_MATERIEL,Industriel,Chemin public: artère principale,40 Km/h,86
+LEGER_MATERIEL,Industriel,Chemin public: artère principale,50 Km/h,857
+LEGER_MATERIEL,Industriel,Chemin public: artère principale,60 Km/h,129
+LEGER_MATERIEL,Industriel,Chemin public: artère principale,70 Km/h,18
+LEGER_MATERIEL,Industriel,Chemin public: rue résidentielle,30 Km/h,6
+LEGER_MATERIEL,Industriel,Chemin public: rue résidentielle,40 Km/h,53
+LEGER_MATERIEL,Industriel,Chemin public: rue résidentielle,50 Km/h,77
+LEGER_MATERIEL,Industriel,Chemin public: rue résidentielle,60 Km/h,2
+LEGER_MATERIEL,Industriel,Chemin public: rue résidentielle,90 Km/h,1
+LEGER_MATERIEL,Industriel,Chemin public: chemin/rang,30 Km/h,3
+LEGER_MATERIEL,Industriel,Chemin public: chemin/rang,50 Km/h,20
+LEGER_MATERIEL,Industriel,Chemin public: ruelle,40 Km/h,1
+LEGER_MATERIEL,Industriel,Chemin public: ruelle,50 Km/h,1
+LEGER_MATERIEL,Industriel,Chemin public: autre,30 Km/h,4
+LEGER_MATERIEL,Industriel,Chemin public: autre,40 Km/h,15
+LEGER_MATERIEL,Industriel,Chemin public: autre,50 Km/h,63
+LEGER_MATERIEL,Industriel,Hors chemin public: terrain de stationnement,10 Km/h,8
+LEGER_MATERIEL,Industriel,Hors chemin public: terrain de stationnement,30 Km/h,1
+LEGER_MATERIEL,Industriel,Hors chemin public: terrain de stationnement,40 Km/h,1
+LEGER_MATERIEL,Industriel,Hors chemin public: terrain de stationnement,50 Km/h,10
+LEGER_MATERIEL,Industriel,Hors chemin public: terrain de stationnement,70 Km/h,1
+LEGER_MATERIEL,Industriel,Hors chemin public: terrain privé,10 Km/h,5
+LEGER_MATERIEL,Industriel,Hors chemin public: terrain privé,30 Km/h,7
+LEGER_MATERIEL,Industriel,Hors chemin public: terrain privé,40 Km/h,2
+LEGER_MATERIEL,Industriel,Hors chemin public: terrain privé,50 Km/h,4
+LEGER_MATERIEL,Industriel,Hors chemin public: chemin privé,10 Km/h,1
+LEGER_MATERIEL,Industriel,Hors chemin public: chemin privé,30 Km/h,1
+LEGER_MATERIEL,Industriel,Hors chemin public: chemin privé,50 Km/h,2
+LEGER_MATERIEL,Industriel,Hors chemin public: autre,30 Km/h,1
+LEGER_MATERIEL,Rural,Chemin public: bretelle/collecteur d’autoroute/voie de service,40 Km/h,1
+LEGER_MATERIEL,Rural,Chemin public: bretelle/collecteur d’autoroute/voie de service,50 Km/h,13
+LEGER_MATERIEL,Rural,Chemin public: route numérotée,50 Km/h,3
+LEGER_MATERIEL,Rural,Chemin public: artère principale,10 Km/h,1
+LEGER_MATERIEL,Rural,Chemin public: artère principale,30 Km/h,1
+LEGER_MATERIEL,Rural,Chemin public: artère principale,40 Km/h,1
+LEGER_MATERIEL,Rural,Chemin public: artère principale,50 Km/h,15
+LEGER_MATERIEL,Rural,Chemin public: artère principale,70 Km/h,1
+LEGER_MATERIEL,Rural,Chemin public: rue résidentielle,40 Km/h,1
+LEGER_MATERIEL,Rural,Chemin public: rue résidentielle,50 Km/h,1
+LEGER_MATERIEL,Rural,Chemin public: chemin/rang,50 Km/h,1
+LEGER_MATERIEL,Rural,Chemin public: ruelle,50 Km/h,1
+LEGER_MATERIEL,Rural,Chemin public: autre,50 Km/h,1
+LEGER_MATERIEL,Rural,Hors chemin public: terrain de stationnement,10 Km/h,1
+LEGER_MATERIEL,Forestier,Chemin public: artère principale,40 Km/h,1
+LEGER_MATERIEL,Forestier,Chemin public: artère principale,60 Km/h,1
+LEGER_MATERIEL,Forestier,Hors chemin public: terrain privé,50 Km/h,1
+LEGER_MATERIEL,Recreatif,Chemin public: artère principale,30 Km/h,3
+LEGER_MATERIEL,Recreatif,Chemin public: artère principale,40 Km/h,2
+LEGER_MATERIEL,Recreatif,Chemin public: artère principale,50 Km/h,14
+LEGER_MATERIEL,Recreatif,Chemin public: rue résidentielle,30 Km/h,8
+LEGER_MATERIEL,Recreatif,Chemin public: rue résidentielle,40 Km/h,3
+LEGER_MATERIEL,Recreatif,Chemin public: rue résidentielle,50 Km/h,1
+LEGER_MATERIEL,Recreatif,Chemin public: rue résidentielle,100 Km/h,1
+LEGER_MATERIEL,Recreatif,Chemin public: chemin/rang,10 Km/h,1
+LEGER_MATERIEL,Recreatif,Chemin public: chemin/rang,40 Km/h,1
+LEGER_MATERIEL,Recreatif,Chemin public: chemin/rang,50 Km/h,1
+LEGER_MATERIEL,Autre,Chemin public: bretelle/collecteur d’autoroute/voie de service,50 Km/h,18
+LEGER_MATERIEL,Autre,Chemin public: bretelle/collecteur d’autoroute/voie de service,70 Km/h,2
+LEGER_MATERIEL,Autre,Chemin public: route numérotée,40 Km/h,1
+LEGER_MATERIEL,Autre,Chemin public: route numérotée,50 Km/h,2
+LEGER_MATERIEL,Autre,Chemin public: route numérotée,100 Km/h,2
+LEGER_MATERIEL,Autre,Chemin public: artère principale,30 Km/h,1
+LEGER_MATERIEL,Autre,Chemin public: artère principale,40 Km/h,2
+LEGER_MATERIEL,Autre,Chemin public: artère principale,50 Km/h,8
+LEGER_MATERIEL,Autre,Chemin public: artère principale,60 Km/h,1
+LEGER_MATERIEL,Autre,Chemin public: rue résidentielle,40 Km/h,1
+LEGER_MATERIEL,Autre,Chemin public: autre,50 Km/h,1
+LEGER_MATERIEL,Autre,Chemin public: autre,70 Km/h,1
+LEGER_MATERIEL,Autre,Hors chemin public: terrain de stationnement,10 Km/h,2
+LEGER_MATERIEL,Autre,Hors chemin public: terrain de stationnement,20 Km/h,1
+LEGER_MATERIEL,Autre,Hors chemin public: terrain privé,20 Km/h,1
+LEGER_MATERIEL,Autre,Hors chemin public: chemin privé,50 Km/h,1
+LEGER_MATERIEL,Autre,Hors chemin public: autre,20 Km/h,1

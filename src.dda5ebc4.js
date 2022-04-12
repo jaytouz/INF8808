@@ -9498,8 +9498,6 @@ var tooltip = _interopRequireWildcard(require("./scripts/tooltip.js"));
 
 var _d3Tip = _interopRequireDefault(require("d3-tip"));
 
-var d3Annotation = _interopRequireWildcard(require("d3-svg-annotation"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -9597,5 +9595,5 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
     viz.setTitleText();
   }
 })(d3);
-},{"./scripts/helper.js":"E6ph","./scripts/scales.js":"GJF3","./scripts/viz.js":"Skrs","./scripts/tooltip.js":"LSfD","d3-tip":"L7nD","d3-svg-annotation":"UBYT"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.d808b835.js.map
+},{"./scripts/helper.js":"E6ph","./scripts/scales.js":"GJF3","./scripts/viz.js":"Skrs","./scripts/tooltip.js":"LSfD","d3-tip":"L7nD"}]},{},["Focm"], null)
+//# sourceMappingURL=/src.dda5ebc4.js.map

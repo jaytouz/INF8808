@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Code pour le TP1 de INF8808.">
+    <title>TP4 | INF8808</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+<header>
+    <h1>
+        Comment les accidents avec les camions se produisent-ils?
+    </h1>
+</header>
+<main>
+    <!--       VIZ 0 map avec les accidents de toutes la ville sur une carte     -->
+    <h1>VIZ 0 : Carte avec les 200k accidents (carte chaleur hexagonal?)</h1>
+    <div class='graph', id="viz0">
+        <svg id='map-hexa'>
+        </svg>
+    </div>
+
+    <!--       VIZ 1 line chart accident en fonction du temps tous les vehicules     -->
+    <h1>VIZ 1</h1>
+    <div class='graph', id="viz1">
+        <svg id='line-chart1'>
+        </svg>
+    </div>
+
+    <!--       VIZ 2 line chart accident en fonction du temps camion et autre     -->
+    <h1>VIZ 2</h1>
+    <div class='graph', id="viz2">
+        <svg id='line-chart2'>
+        </svg>
+    </div>
+
+    <!--       VIZ 3 line chart accident en fonction du temps camion + annotations     -->
+    <h1>VIZ 3</h1>
+    <div class='graph', id="viz3">
+        <svg id='line-chart3'>
+        </svg>
+    </div>
+
+    <!--       VIZ 4 bar chart ratio mort mort camion vs autre    -->
+    <h1>VIZ 4</h1>
+    <div class='graph', id="viz4">
+        <svg id='bar-chart'>
+        </svg>
+    </div>
+
+    <!--       VIZ 5 Parallel Sets Env, Route, Vitesse    -->
+    <h1>VIZ 5 Parallel Sets Env, Route, Vitesse (data : camion (gravite == Mort ou Grave)</h1>
+    <div class='graph', id="viz5">
+        <svg id='pset1'>
+        </svg>
+    </div>
+
+    <!--       VIZ 6 Parallel Sets Env, Route, Vitesse    -->
+    <h1>VIZ 6 Parallel Sets Configuration, Aspect des routes (data : camion (gravite == Mort ou Grave)</h1>
+    <div class='graph', id="viz6">
+        <svg id='pset2'>
+        </svg>
+    </div>
+
+    <!--       VIZ 7 Parallel Sets Env, Route, Vitesse    -->
+    <h1>VIZ 7 Parallel Sets Météo, État surface, État chaussé, Éclairage  (data : camion (gravite == Mort ou Grave)</h1>
+    <div class='graph', id="viz7">
+        <svg id='pset3'>
+        </svg>
+    </div>
+</main>
+<script src="https://d3js.org/d3.v5.js"></script>
+<script type="module" src="index.js"></script>
+</body>
+</html>

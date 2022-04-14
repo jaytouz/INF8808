@@ -1,0 +1,39 @@
+{
+  "name": "Projet Accident Auto Montréal",
+  "version": "1.0.0",
+  "description": "Projet pour le cours INF8808.",
+  "scripts": {
+    "build": "parcel build --no-minify ./src/index.html",
+    "start": "parcel ./src/index.html --log-level=2 --port=8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jérémie Tousignant, template par Olivia Gélinas",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@types/d3-tip": "^3.5.5",
+    "d3": "^5.16.0",
+    "d3-svg-annotation": "^2.3.1",
+    "d3-sankey": "^0.12.3",
+    "d3-sankey-circular": "^0.34.0",
+    "d3-svg-legend": "^2.25.6",
+    "d3-tip": "^0.9.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsdoc": "^29.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "./src/assets/data"
+    ]
+  }
+}

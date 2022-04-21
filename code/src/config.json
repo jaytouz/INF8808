@@ -1,0 +1,21 @@
+{
+  "title": "Titre de l'article",
+  "authors": [
+    {
+      "name": "AUTEUR_1",
+      "url": "https://www.ledevoir.com/auteur/AUTEUR_1_URL",
+      "role": "ROLE_DESCRIPTION"
+    },
+    {
+      "name": "AUTEUR_2",
+      "url": "https://www.ledevoir.com/auteur/AUTEUR_2_URL",
+      "role": "ROLE_DESCRIPTION"
+    }
+  ],
+  "date": "DATE_ICI",
+  "update": "",
+  "url": "https://www.ledevoir.com/documents/special/ICI",
+  "description": "Mettre la description du site web ici.",
+  "image": "https://www.ledevoir.com/documents/special/URL_IMG_ICI",
+  "keywords": ["key1", "key2", "..."]
+}

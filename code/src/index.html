@@ -1,79 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr-CA">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Code pour le TP1 de INF8808.">
-    <title>TP4 | INF8808</title>
+  <!--
+    SCROLLYTELLING LE DEVOIR
 
-    <link rel="stylesheet" href="assets/style.css">
+    Gabarit pour scrollytelling à utiliser au Devoir.
 
+    Développé par:
+      - Jean-Philippe Corbeil (jpcorbeil@ledevoir.com)
+      - Antoine Béland (abeland@ledevoir.com)
+  -->
+
+  <title><%= htmlWebpackPlugin.options.title %> | Le Devoir</title><!-- Titre de l'onglet (ne pas modifier) -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!--
+    Le processus pour les métas va comme suit:
+
+    1 - Faire une page small.jpg pour les réseaux sociaux et le partage.
+    2 - Mettre cette image dans le dossier assets/img.
+    3 - Mettre à jour les informations dans le fichier 'config.json'.
+
+    * Généralement fait une fois que le code est prêt à être publié.
+    ** NE PAS MODIFIER LES MÉTAS DIRECTEMENT DANS LE FICHIER INDEX.HTML **
+  -->
+  <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+
+  <meta property="og:url" content="<%= htmlWebpackPlugin.options.url %>">
+  <meta property="og:site_name" content="Le Devoir">
+  <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="<%= htmlWebpackPlugin.options.image %>">
+  <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>">
+
+  <meta property="article:publisher" content="https://www.facebook.com/ledevoir">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ledevoir">
+  <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.description %>">
+  <meta name="twitter:creator" content="Le Devoir">
+  <!-- at least 280px x 150px for Twitter (image must be < 1MB) -->
+  <meta name="twitter:image:src" content="<%= htmlWebpackPlugin.options.image %>">
+  <meta name="twitter:domain" content="https://ledevoir.com">
+  <%= htmlWebpackPlugin.options.authorMetas %>
+
+  <script>
+    var dataLayer = [{
+      pageTitle: "<%= htmlWebpackPlugin.options.title %>" + " | Le Devoir",
+      siteSection: "visualisation",
+      articleAuthor: "<%= htmlWebpackPlugin.options.authorsGA %>",
+      articleName: "<%= htmlWebpackPlugin.options.title %>"
+    }];
+  </script>
 </head>
-
 <body>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+  <script>
+  (function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("https://experience.tinypass.com/xbuilder/experience/load?aid=rRgpSk2Ipu");
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (typeof tp !== 'undefined') {
+            tp.push(["setContentCreated", "<%= htmlWebpackPlugin.options.date %>"]);
+            tp.push(["setContentSection", 'Visualisation']);
+            tp.push(["setContentIsNative", false]);
+            tp.push(["setCustomVariable", "paywallHit", false]);
+            tp.push(["setTags", [<%= htmlWebpackPlugin.options.keywords %>]]);
+        }
+    });
+    </script>
+
 <header>
-    <h1>
-        Comment les accidents avec les camions se produisent-ils?
-    </h1>
+  <ul class="pull-right social-buttons">
+    <li>
+      <button data-type="twitter" aria-label="Partager sur Twitter">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </button>
+    </li>
+    <li>
+      <button>
+        <a class="facebook" target="_blank" href="https://www.facebook.com/share.php?u=<%= htmlWebpackPlugin.options.url %>">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </button>
+    </li>
+  </ul>
+  <a href="https://www.ledevoir.com">
+    <img alt="Le Devoir" src="assets/img/logo-devoir.svg">
+  </a>
+  <!-- TITRE DE L'ARTICLE EN RAPPEL (ne pas modifer) -->
+  <h1 class="article-reminder"><%= htmlWebpackPlugin.options.title %></h1>
+  <div class="progress"></div>
 </header>
 <main>
-    <!--       VIZ 0 map avec les accidents de toutes la ville sur une carte     -->
-    <h1>VIZ 0 : Carte avec les 200k accidents (carte chaleur hexagonal?)</h1>
-    <div class='graph', id="viz0">
-        <svg id='map-hexa'>
-        </svg>
+  <section class="intro-section">
+    <h1><%= htmlWebpackPlugin.options.title %></h1> <!-- TITRE DE L'ARTICLE (ne pas modifer) -->
+    <address> <!-- AUTEURS ET DATE DE PUBLICATION (ne pas modifer) -->
+      <div class="authors">Par <%= htmlWebpackPlugin.options.authors %></div>
+      <div class="date"><%= htmlWebpackPlugin.options.date %></div>
+    </address>
+    <p>  <!-- AMORCE (à modifier) -->
+      Le texte de l'amorce...
+    </p>
+  </section>
+  <section class="viz-section">
+    <div class="steps">
+      <section>
+        <h1>Titre de la section 1</h1>
+        <p>Texte de la section 1...</p>
+      </section>
+      <section>
+        <p>Texte de la section 2...</p>
+      </section>
+      <section>
+        <p>Texte de la section 3...</p>
+      </section>
+      <section>
+        <h1>Titre de la section 4</h1>
+        <p>Texte de la section 4...</p>
+      </section>
     </div>
+    <div class="viz" id="viz"></div>
+  </section>
 
-    <!--       VIZ 1 line chart accident en fonction du temps tous les vehicules     -->
-    <h1>VIZ 1</h1>
-    <div class='graph', id="viz1">
-        <svg id='line-chart1'>
-        </svg>
+  
+  <section class="viz-section">
+    <div class="steps">
+      <section>
+        <h1>Titre de la section 1</h1>
+        <p>Texte de la section 1...</p>
+      </section>
+      <section>
+        <p>Texte de la section 2...</p>
+      </section>
+      <section>
+        <p>Texte de la section 3...</p>
+      </section>
+      <section>
+        <h1>Titre de la section 4</h1>
+        <p>Texte de la section 4...</p>
+      </section>
     </div>
-
-    <!--       VIZ 2 line chart accident en fonction du temps camion et autre     -->
-    <h1>VIZ 2</h1>
-    <div class='graph', id="viz2">
-        <svg id='line-chart2'>
-        </svg>
-    </div>
-
-    <!--       VIZ 3 line chart accident en fonction du temps camion + annotations     -->
-    <h1>VIZ 3</h1>
-    <div class='graph', id="viz3">
-        <svg id='line-chart3'>
-        </svg>
-    </div>
-
-    <!--       VIZ 4 bar chart ratio mort mort camion vs autre    -->
-    <h1>VIZ 4</h1>
-    <div class='graph', id="viz4">
-        <svg id='bar-chart'>
-        </svg>
-    </div>
-
-    <!--       VIZ 5 Parallel Sets Env, Route, Vitesse    -->
-    <h1>VIZ 5 Parallel Sets Env, Route, Vitesse (data : camion (gravite == Mort ou Grave)</h1>
-    <div class='graph', id="viz5">
-        <svg id='pset1'>
-        </svg>
-    </div>
-
-    <!--       VIZ 6 Parallel Sets Env, Route, Vitesse    -->
-    <h1>VIZ 6 Parallel Sets Configuration, Aspect des routes (data : camion (gravite == Mort ou Grave)</h1>
-    <div class='graph', id="viz6">
-        <svg id='pset2'>
-        </svg>
-    </div>
-
-    <!--       VIZ 7 Parallel Sets Env, Route, Vitesse    -->
-    <h1>VIZ 7 Parallel Sets Météo, État surface, État chaussé, Éclairage  (data : camion (gravite == Mort ou Grave)</h1>
-    <div class='graph', id="viz7">
-        <svg id='pset3'>
-        </svg>
-    </div>
+    <div class="viz" id="viz2"></div>
+  </section>
 </main>
-<script src="https://d3js.org/d3.v5.js"></script>
-<script type="module" src="index.js"></script>
+<footer>
+  <div>
+    <!-- MENTION À L'INFOGRAPHIE OU LA COLLABORATION. À MODIFIER AU BESOIN. -->
+    <p>
+      <%= htmlWebpackPlugin.options.authorsRoles %>
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript" src="assets/lib/social.min.js"></script>
 </body>
 </html>

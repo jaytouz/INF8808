@@ -45,33 +45,17 @@ export async function initialize() {
     .attr('height', config.height)
     .style('fill', 'green');
 
-  // return data.map(d => {
-  //   return () => {
-  //     rect.transition()
-  //       .duration(300)
-  //       .style('fill', d.color);
-  //   }
-  // });
-  return [[1,2,3,4],[5,6,7,8]]
 
-
-    // () => {rect1.transition().duration(300).style('fill','green')},
-    // () => {rect1.transition().duration(300).style('fill','red')},
-    // () => {rect1.transition().duration(300).style('fill','blue')},
-    // () => {rect1.transition().duration(300).style('fill','yellow')},
-    // () => {rect2.transition().duration(300).style('fill','green')},
-    // () => {rect2.transition().duration(300).style('fill','red')},
-    // () => {rect2.transition().duration(300).style('fill','blue')},
-    // () => {rect2.transition().duration(300).style('fill','yellow')}
-
-  // () => {rect1.transition().duration(300).style('fill','green')},
-  // () => {rect1.transition().duration(300).style('fill','red')},
-  // () => {rect1.transition().duration(300).style('fill','blue')},
-  // () => {rect1.transition().duration(300).style('fill','yellow')}
-  // return [
-  //     () => {rect2.transition().duration(300).style('fill','green')},
-  //     () => {rect2.transition().duration(300).style('fill','red')},
-  //     () => {rect2.transition().duration(300).style('fill','blue')},
-  //     () => {rect2.transition().duration(300).style('fill','yellow')}
-  //   ]
+  return [[
+    () => {rect1.transition().duration(300).style('fill','green')},
+    () => {rect1.transition().duration(300).style('fill','red')},
+    () => {rect1.transition().duration(300).style('fill','blue')},
+    () => {rect1.transition().duration(300).style('fill','yellow')}
+  ],[
+      () => {rect2.transition().duration(300).style('fill','green')},
+      () => {rect2.transition().duration(300).style('fill','red')},
+      () => {rect2.transition().duration(300).style('fill','blue')},
+      () => {rect2.transition().duration(300).style('fill','yellow')}
+    ]
+  ]
 }

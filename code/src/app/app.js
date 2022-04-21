@@ -21,7 +21,7 @@ import { initialize as v1 } from './viz';
 import { scroller } from './scroller';
 
 Promise.all([v1()]).then(([callbacksV1]) =>  {
-  scroller([callbacksV1])
+  scroller(callbacksV1)
     .offsetTop(headerHeight)
     .offsetBottom(0)
     .initialize();

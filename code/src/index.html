@@ -56,6 +56,10 @@
       articleName: "<%= htmlWebpackPlugin.options.title %>"
     }];
   </script>
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+
 </head>
 <body>
   <script
@@ -111,6 +115,27 @@
       Le texte de l'amorce...
     </p>
   </section>
+
+  <section class="viz-section">
+    <div class="steps">
+      <section>
+        <h1>Titre de la section 1</h1>
+        <p>Texte de la section 1...</p>
+      </section>
+      <section>
+        <p>Texte de la section 2...</p>
+      </section>
+      <section>
+        <p>Texte de la section 3...</p>
+      </section>
+      <section>
+        <h1>Titre de la section 4</h1>
+        <p>Texte de la section 4...</p>
+      </section>
+    </div>
+    <div class="viz" id="map"></div>
+  </section>
+
   <section class="viz-section">
     <div class="steps">
       <section>

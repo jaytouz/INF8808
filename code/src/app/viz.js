@@ -5,6 +5,7 @@
  */
 
 import * as d3 from 'd3';
+import * as map from "./map.js";
 
 const config = {
   width: 500,
@@ -45,8 +46,15 @@ export async function initialize() {
     .attr('height', config.height)
     .style('fill', 'green');
 
+  map.buildMap('map');
 
-  return [[
+  return [
+  [
+    () => {},
+    () => {},
+    () => {},
+    () => {}
+  ],[
     () => {rect1.transition().duration(300).style('fill','green')},
     () => {rect1.transition().duration(300).style('fill','red')},
     () => {rect1.transition().duration(300).style('fill','blue')},

@@ -15,6 +15,8 @@ import {
   drawOneLine,
   transitionYAxis
 } from "./linechart";
+import {DrawParalleleSet, initializeParalleSet, selectNode} from "./paralleleSetChart"
+
 
 const config = {
   width: 1000,
@@ -38,7 +40,7 @@ const g1 = svg1.append('g')
 
 const visContainer2 = d3.select('#viz2');
 const svg2 = visContainer2.append('svg')
-  .attr('viewBox', `0 0 ${fullWidth} ${fullHeight}`)
+  .attr('viewBox', `0 0 ${2400} ${1400}`)
   .attr('preserveAspectRatio', 'xMidYMid');
 const g2 = svg2.append('g')
   .attr('transform', `translate(${config.margin.left}, ${config.margin.top})`);
@@ -47,6 +49,7 @@ export async function initialize() {
   let linechartAll = await d3.csv('./data/rolling7_viz1_all_vehicule_date.csv');
   let linechartTypes = await d3.csv('./data/rolling7_viz2_acc_by_type_date.csv');
   let linechartCamion = await d3.csv('./data/rolling7_viz3_acc_camion_date.csv');
+  let pset1 = await initializeParalleSet('./data/pset_env_route_vit.csv');
 
 
   [linechartAll, linechartTypes, linechartCamion] = processData(linechartAll, linechartTypes, linechartCamion)
@@ -80,9 +83,9 @@ export async function initialize() {
   ],
     [
       () => {},
-      () => {},
-      () => {},
-      () => {}
+      () => {DrawParalleleSet(g2, 1000, 2000, config.margin, pset1)},
+      () => {selectNode(g2, 2)},
+      () => {selectNode(g2, 3)}
     ]
   ]
 }

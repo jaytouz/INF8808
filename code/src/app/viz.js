@@ -46,9 +46,9 @@ const g2 = svg2.append('g')
 
 export async function initialize() {
 
-  let linechartAll = await d3.csv('./data/rolling7_viz1_all_vehicule_date.csv');
-  let linechartTypes = await d3.csv('./data/rolling7_viz2_acc_by_type_date.csv');
-  let linechartCamion = await d3.csv('./data/rolling7_viz3_acc_camion_date.csv');
+  let linechartDataAll = await d3.csv('./data/rolling7_viz1_all_vehicule_date.csv');
+  let linechartDataType = await d3.csv('./data/rolling7_viz2_acc_by_type_date.csv');
+  // let linechartCamion = await d3.csv('./data/rolling7_viz3_acc_camion_date.csv');
   let pset1 = await initializeParalleSet('./data/pset_env_route_vit.csv');
 
   let dataAll, dataOther, dataCamion
@@ -75,7 +75,7 @@ export async function initialize() {
   // transitionYAxis(scaleY2)
   // drawOneLine(linechartCamion, scaleX, scaleY2, g1, "#ce0d0d")
 
-  // map.buildMap('map');
+  map.buildMap('map');
 
   return [
   [

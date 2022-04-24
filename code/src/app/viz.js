@@ -49,7 +49,8 @@ export async function initialize() {
   let linechartAll = await d3.csv('./data/rolling7_viz1_all_vehicule_date.csv');
   let linechartTypes = await d3.csv('./data/rolling7_viz2_acc_by_type_date.csv');
   let linechartCamion = await d3.csv('./data/rolling7_viz3_acc_camion_date.csv');
-  let pset1 = await initializeParalleSet('./data/pset_env_route_vit.csv');
+  let pset1 = await initializeParalleSet('./data/pset_env_route_vit.csv', '#153e5e');
+  DrawParalleleSet(g2, 1000, 2000, config.margin, pset1);
 
 
   [linechartAll, linechartTypes, linechartCamion] = processData(linechartAll, linechartTypes, linechartCamion)
@@ -82,10 +83,10 @@ export async function initialize() {
       () => {drawOneLine(linechartCamion, scaleX, scaleY2, g1, "#ce0d0d")}
   ],
     [
-      () => {},
-      () => {DrawParalleleSet(g2, 1000, 2000, config.margin, pset1)},
+      () => {selectNode(g2, -1)},
       () => {selectNode(g2, 2)},
-      () => {selectNode(g2, 3)}
+      () => {selectNode(g2, 3)},
+      () => {selectNode(g2, -1)}
     ]
   ]
 }

@@ -4,10 +4,10 @@ import { sankey as Sankey } from 'd3-sankey'
 import { sankeyLinkHorizontal } from 'd3-sankey'
 
 const otherColor = '#CCC'
-const selectionColor = '#940d45'
+let selectionColor = '#940d45'
 
-export async function initializeParalleSet(dataPath) {
-  console.log("initialize");
+export async function initializeParalleSet(dataPath, color = '#940d45') {
+  selectionColor = color
   return await d3.csv(dataPath).then(function (data){
 
     data = data.filter(d => d.Gravite === 'Grave ou Mortel')
@@ -34,7 +34,7 @@ export async function DrawParalleleSet(g, height, width, margin, data) {
   const sankey = Sankey()
       .nodeSort(null)
       .linkSort(null)
-      .nodeWidth(4)
+      .nodeWidth(20)
       .nodePadding(20)
       .extent([[0, 5], [graphSize.width, graphSize.height]])
 
@@ -56,7 +56,8 @@ export async function DrawParalleleSet(g, height, width, margin, data) {
 export function selectNode(g, index) {
   var nodes = g.selectAll('.graph-node').data()
   //console.log("nodes : ", nodes);
-  onClickEvent(g, nodes[index], selectionColor, otherColor)
+  var data = index >= 0 ? nodes[index] : null
+  onClickEvent(g, data, selectionColor, otherColor)
 }
 
 /**
@@ -215,9 +216,10 @@ function setEventHandler (g, selectionColor, otherColor) {
 function onClickEvent (g, data, selectionColor, otherColor) {
   var keys = []
 
-  AddSourceLinksKeys(keys, data.sourceLinks)
-  AddTargetLinksKeys(keys, data.targetLinks)
-
+  if (data != null) {
+    AddSourceLinksKeys(keys, data.sourceLinks)
+    AddTargetLinksKeys(keys, data.targetLinks)
+  }
 
   g.selectAll('.graph-line')
     .select('path')

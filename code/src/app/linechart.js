@@ -1,4 +1,6 @@
 import * as d3 from 'd3';
+import { annotation } from 'd3-svg-annotation'
+import * as d3Annotation from 'd3-svg-annotation'
 
 
 function drawXAxis(svg, x, height){
@@ -32,11 +34,15 @@ export function transitionYAxis(y, delay=2000, id='yAxisLineChart'){
         .call(d3.axisLeft(y))
 }
 
-export function processData(data1, data2, data3){
+export function processData(data1, data2){
     data1 = data1.map(function(d) { return {date:d3.timeParse("%Y-%m-%d")(d.Date), value:+d.Nombres}})
-    data2 = data2.map(function(d) { return {date:d3.timeParse("%Y-%m-%d")(d.Date), key: d.Types, value:+d.Nombres}})
-    data3 = data3.map(function(d) { return {date:d3.timeParse("%Y-%m-%d")(d.Date), value:+d.Nombres}})
-    return [data1, data2, data3]
+
+    data2 = data2.map(function(d) { return {date:d3.timeParse("%Y-%m-%d")(d.Date), type: d.Types, value:+d.Nombres}})
+    const other = data2.filter(function(d) { return d.type === 'SANS_CAMION'})
+    const camion = data2.filter(function(d) {return d.type === 'CAMION'})
+
+    // data3 = data3.map(function(d) { return {date:d3.timeParse("%Y-%m-%d")(d.Date), value:+d.Nombres}})
+    return [data1, other, camion]
 }
 
 export function drawLineChartAxis(g, x, y, width, height){
@@ -44,15 +50,161 @@ export function drawLineChartAxis(g, x, y, width, height){
     drawYAxis(g, y)
 }
 
-export function drawOneLine(data, x, y, svg, color) {
+/**
+ * Positions the x axis label and y axis label.
+ *
+ * @param {*} g The d3 Selection of the graph's g SVG element
+ * @param {number} width The width of the graph
+ * @param {number} height The height of the graph
+ */
+export function positionLabels (g, width, height) {
+    // TODO : Position axis labels
+    var labelDate = g.selectAll('.x.axis-text')
+    var labelAccident = g.selectAll('.y.axis-text')
+
+    labelDate.attr('x', width / 2)
+    labelDate.attr('y', height + 40)
+
+    labelAccident.attr('x', -40)
+    labelAccident.attr('y', height / 2)
+}
+
+/**
+ * Draws the circles on the graph.
+ *
+ * @param g
+ * @param {object} data The data to bind to
+ * @param {*} rScale The scale for the circles' radius
+ * @param {*} colorScale The scale for the circles' color
+ * @param color
+ * @param xScale
+ * @param yScale
+ */
+export function drawLine (g, data, color, xScale, yScale) {
+    g.append('path')
+        .datum(data)
+        .attr('class', 'linePath')
+        .attr('fill', 'none')
+        .attr('stroke', color)
+        .attr('stroke-width', 1.5)
+        .attr('d', d3.line()
+            .x(function (d) { return xScale(d.date) })
+            .y(function (d) { return yScale(d.nombre) })
+        )
+}
+
+/**
+ * @param xScale
+ * @param yScale
+ * @param margin
+ * @param graphSize
+ * @param viz : string can be 'annotation1' or 'annotation2'
+ */
+function getAnnotation (xScale, yScale, margin, graphSize, viz) {
+    let annotation = []
+    switch (viz) {
+        case 'annotation1':
+            annotation = [{
+                note: { label: 'Vision Zéro' },
+                subject: {
+                    y1: margin.top,
+                    y2: graphSize.height - margin.bottom
+                },
+                y: margin.top,
+                data: { x: new Date('2016-01-01') } // position the x based on an x scale
+            },
+                {
+                    note: { label: 'Début couvre-feu' },
+                    subject: {
+                        y1: margin.top,
+                        y2: graphSize.height - margin.bottom
+                    },
+                    y: margin.top,
+                    data: { x: new Date('2020-03-14') }
+                }]
+            break
+        case 'annotation2':
+            annotation = [
+                {
+                    note: {
+                        title: 'Tendance à la hausse'
+                    },
+                    connector: {
+                        end: 'arrow' // Can be none, or arrow or dot
+                    },
+                    subject: {
+                        height: graphSize.height - margin.top - margin.bottom,
+                        width: xScale(new Date('2020-03-14')) - xScale(new Date('2016-01-01'))
+                    },
+                    type: d3Annotation.annotationCalloutRect,
+                    x: xScale(new Date('01-01-2016')),
+                    y: margin.top,
+                    disable: ['connector'] // doesn't draw the connector
+
+                }]
+            break
+    }
+    return annotation
+}
+
+/**
+ * Draw vertical line to indicate an event in time
+ *
+ * @param date
+ * @param text
+ * @param g
+ * @param xScale
+ * @param yScale
+ * @param margin
+ * @param height
+ * @param annotations
+ */
+export function drawAnnotationsViz (g, xScale, yScale, annotations) {
+    /* Code below relevant for annotations */
+    const type = d3Annotation.annotationCustomType(
+        d3Annotation.annotationXYThreshold,
+        {
+            note: {
+                lineType: 'none',
+                orientation: 'top',
+                align: 'middle'
+            }
+        }
+    )
+    const makeAnnotations = d3Annotation.annotation()
+        .type(type)
+        // Gives you access to any data objects in the annotations array
+        .accessors({
+            x: function (d) { return xScale(new Date(d.x)) },
+            y: function (d) { return yScale(d.y) }
+        })
+        .annotations(annotations)
+        .textWrap(30)
+
+    const annotation = g.append('g')
+        .attr('class', 'annotation-group')
+        .call(makeAnnotations)
+
+    return annotation
+}
+
+export function initAnnotation(g, xScale, yScale1, yScale2, config){
+    const annotation1 = getAnnotation(xScale, yScale1, config, config.margin, 'annotation1')
+    const annotation2 = getAnnotation(xScale, yScale2, config, config.margin, 'annotation2')
+    const a1 = drawAnnotationsViz(g, xScale, yScale1, annotation1)
+    const a2 = drawAnnotationsViz(g, xScale, yScale2, annotation2)
+    a1.style('opacity', 0)
+    a2.style('opacity', 0)
+    return [a1, a2]
+}
+
+export function initLine(data, x, y, svg, color) {
     // Updata the line
     const line = svg.append('g')
         .selectAll(".lines")
         .data([data])
         .join("path")
         .attr("class", "lines")
-        .transition()
-        .duration(3000)
         .attr("d",d3.line()
                 .x(function (d) { return x(d.date)})
                 .y(function (d) { return y(d.value)})
@@ -60,22 +212,23 @@ export function drawOneLine(data, x, y, svg, color) {
         .attr("fill", "none")
         .attr("stroke", color)
         .attr("stroke-width", 2.5)
+        .style("opacity", 0)
 
     return line
-}
-
-function hideLine(svg){
-    d3.selectAll('.lines')
-        .transition('')
-        .style('opacity', 0)
 }
 
 /**
  * draw axis, init chart with transition
  */
-export function step1LineChart(data, x, y, g, color){
+export function step1LineChart(line1, annotation1){
     console.log('drawing all vehicule')
-    drawOneLine(data, x, y , g, color)
+    line1
+        .transition()
+        .style('opacity', 0)
+
+    annotation1.style('opacity', 0 )
+
+
     // show graphe opacity 1
     // exit data type
     // annotation 1 opacity 0
@@ -83,18 +236,42 @@ export function step1LineChart(data, x, y, g, color){
 
 
 
-export function step2LineChart(data, x, y, g, color){
-    console.log('drawing all vehicule')
-    drawOneLine(data, x, y , g, color)
+export function step2LineChart(line1, line2, line3, annotation1){
+    line2.transition().style('opacity', 0)
+    line3.transition().style('opacity', 0)
+
+    line1
+        .transition()
+        .delay(200)
+        .style('opacity',1)
+
+    annotation1.style('opacity', 1)
+    //add annotation
 
 }
 
 
-export function step3LineChart(){
+export function step3LineChart(line1, line2, line3, annotation1, annotation2, line4, y){
+    transitionYAxis(y, 0)
+    line4.transition().style('opacity',0)
+    annotation2.transition().style('opacity', 0)
 
+    line1.transition().delay(500).style('opacity', 0)
+    annotation1.style('opacity', 0)
+
+    line2.transition().delay(1000).style('opacity', 1)
+    line3.transition().delay(1000).style('opacity', 1)
 }
 
 
-export function step4LineChart(){
+export function step4LineChart(line2, line3, y, line4, annotation2){
+    line2.transition().delay(1000).style('opacity', 0)
+    line3.transition().delay(1000).style('opacity', 0)
+
+    transitionYAxis(y, 2000)
+
+
+    line4.transition().delay(3000).style('opacity',1)
+    annotation2.transition().delay(3000).style('opacity', 1)
 
 }

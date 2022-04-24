@@ -53,7 +53,8 @@ export async function DrawParalleleSet(g, height, width, margin, data) {
   return g
 }
 
-export function selectNode(g, index) {
+export function selectNode(g, index, color) {
+  selectionColor = color
   var nodes = g.selectAll('.graph-node').data()
   //console.log("nodes : ", nodes);
   var data = index >= 0 ? nodes[index] : null

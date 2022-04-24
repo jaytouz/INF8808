@@ -54,12 +54,12 @@ const svg2 = visContainer2.append('svg')
 const g2 = svg2.append('g')
     .attr('transform', `translate(${config.margin.left}, ${config.margin.top})`);
 
-const visContainer4 = d3.select('#pset2');
-const svg4 = visContainer4.append('svg')
-    .attr('viewBox', `0 0 ${2400} ${1400}`)
-    .attr('preserveAspectRatio', 'xMidYMid');
-const g4 = svg4.append('g')
-    .attr('transform', `translate(${config.margin.left}, ${config.margin.top})`);
+// const visContainer4 = d3.select('#pset2');
+// const svg4 = visContainer4.append('svg')
+//     .attr('viewBox', `0 0 ${2400} ${1400}`)
+//     .attr('preserveAspectRatio', 'xMidYMid');
+// const g4 = svg4.append('g')
+//     .attr('transform', `translate(${config.margin.left}, ${config.margin.top})`);
 
 const visContainer5 = d3.select('#pset3');
 const svg5 = visContainer5.append('svg')
@@ -71,11 +71,13 @@ const g5 = svg5.append('g')
 export async function initialize() {
   let pset1 = await initializeParalleSet('./data/pset_env_route_vit.csv', '#2c4aad');
   DrawParalleleSet(g2, 1000, 2000, config.margin, pset1);
-  let pset2 = await initializeParalleSet('./data/pset_conf_aspect.csv', '#85ab77');
-  DrawParalleleSet(g4, 1000, 2000, config.margin, pset2);
+  // let pset2 = await initializeParalleSet('./data/pset_conf_aspect.csv', '#85ab77');
+  // DrawParalleleSet(g4, 1000, 2000, config.margin, pset2);
   let pset3 = await initializeParalleSet('./data/pset_cond_ext.csv', '#f68c1c');
   DrawParalleleSet(g5, 1000, 2000, config.margin, pset3);
 
+  const pset1Color = '#2c4aad'
+  const pset3Color = '#f68c1c'
 
 
   let linechartDataAll = await d3.csv('./data/rolling7_viz1_all_vehicule_date.csv');
@@ -130,22 +132,15 @@ export async function initialize() {
       () => {step4LineChart(lineOther, lineCamion, scaleY2, lineCamionZoom,annotation2)}
   ],
     [
-      () => {selectNode(g2, -1)},
-      () => {selectNode(g2, 2)},
-      () => {selectNode(g2, 3)},
-      () => {selectNode(g2, -1)}
+      () => {selectNode(g2, -1, pset1Color)},
+      () => {selectNode(g2, 2, pset1Color)},
+      () => {selectNode(g2, 3, pset1Color)},
+      () => {selectNode(g2, 3, pset1Color)}
     ],
     [
-      () => {selectNode(g4, -1)},
-      () => {selectNode(g4, 2)},
-      () => {selectNode(g4, 3)},
-      () => {selectNode(g4, -1)}
-    ],
-    [
-      () => {selectNode(g5, -1)},
-      () => {selectNode(g5, 2)},
-      () => {selectNode(g5, 3)},
-      () => {selectNode(g5, -1)}
+      () => {
+          selectNode(g5, 4,pset3Color)},
+      () => {selectNode(g5, 1, pset3Color)}
     ]
   ]
 }

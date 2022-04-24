@@ -1,0 +1,62 @@
+Gravite,Configuration,Aspect route,count
+Grave ou Mortel,Sens unique,"Droit, plat",29
+Grave ou Mortel,Sens unique,"Droit, en haut de la pente",1
+Grave ou Mortel,Sens unique,"Droit, dans la pente",2
+Grave ou Mortel,une voie par direction,"Droit, plat",33
+Grave ou Mortel,une voie par direction,"Droit, dans la pente",1
+Grave ou Mortel,une voie par direction,"Droit, en bas de la pente (creux)",1
+Grave ou Mortel,une voie par direction,"Courbe, plat",1
+Grave ou Mortel,plus d’une voie par direction,"Droit, plat",65
+Grave ou Mortel,plus d’une voie par direction,"Droit, en haut de la pente",2
+Grave ou Mortel,plus d’une voie par direction,"Droit, en bas de la pente (creux)",1
+Grave ou Mortel,plus d’une voie par direction,"Courbe, plat",1
+Grave ou Mortel,Séparée par aménagement franchissable,"Droit, plat",10
+Grave ou Mortel,Séparée par aménagement franchissable,"Droit, dans la pente",1
+Grave ou Mortel,Séparée par aménagement franchissable,"Droit, en bas de la pente (creux)",2
+Grave ou Mortel,Séparée par aménagement infranchissable,"Droit, plat",8
+Grave ou Mortel,Autre,"Droit, plat",12
+Dommage matériel ou Léger,Sens unique,"Droit, plat",5627
+Dommage matériel ou Léger,Sens unique,"Droit, en haut de la pente",147
+Dommage matériel ou Léger,Sens unique,"Droit, dans la pente",295
+Dommage matériel ou Léger,Sens unique,"Droit, en bas de la pente (creux)",95
+Dommage matériel ou Léger,Sens unique,"Courbe, plat",207
+Dommage matériel ou Léger,Sens unique,"Courbe, en haut de la pente",29
+Dommage matériel ou Léger,Sens unique,"Courbe, dans la pente",37
+Dommage matériel ou Léger,Sens unique,"Courbe, en bas de la pente (creux)",13
+Dommage matériel ou Léger,une voie par direction,"Droit, plat",4514
+Dommage matériel ou Léger,une voie par direction,"Droit, en haut de la pente",57
+Dommage matériel ou Léger,une voie par direction,"Droit, dans la pente",184
+Dommage matériel ou Léger,une voie par direction,"Droit, en bas de la pente (creux)",44
+Dommage matériel ou Léger,une voie par direction,"Courbe, plat",93
+Dommage matériel ou Léger,une voie par direction,"Courbe, en haut de la pente",7
+Dommage matériel ou Léger,une voie par direction,"Courbe, dans la pente",7
+Dommage matériel ou Léger,une voie par direction,"Courbe, en bas de la pente (creux)",5
+Dommage matériel ou Léger,plus d’une voie par direction,"Droit, plat",4821
+Dommage matériel ou Léger,plus d’une voie par direction,"Droit, en haut de la pente",79
+Dommage matériel ou Léger,plus d’une voie par direction,"Droit, dans la pente",128
+Dommage matériel ou Léger,plus d’une voie par direction,"Droit, en bas de la pente (creux)",76
+Dommage matériel ou Léger,plus d’une voie par direction,"Courbe, plat",60
+Dommage matériel ou Léger,plus d’une voie par direction,"Courbe, en haut de la pente",10
+Dommage matériel ou Léger,plus d’une voie par direction,"Courbe, dans la pente",12
+Dommage matériel ou Léger,plus d’une voie par direction,"Courbe, en bas de la pente (creux)",1
+Dommage matériel ou Léger,Séparée par aménagement franchissable,"Droit, plat",526
+Dommage matériel ou Léger,Séparée par aménagement franchissable,"Droit, en haut de la pente",9
+Dommage matériel ou Léger,Séparée par aménagement franchissable,"Droit, dans la pente",19
+Dommage matériel ou Léger,Séparée par aménagement franchissable,"Droit, en bas de la pente (creux)",6
+Dommage matériel ou Léger,Séparée par aménagement franchissable,"Courbe, plat",16
+Dommage matériel ou Léger,Séparée par aménagement franchissable,"Courbe, dans la pente",1
+Dommage matériel ou Léger,Séparée par aménagement infranchissable,"Droit, plat",705
+Dommage matériel ou Léger,Séparée par aménagement infranchissable,"Droit, en haut de la pente",17
+Dommage matériel ou Léger,Séparée par aménagement infranchissable,"Droit, dans la pente",42
+Dommage matériel ou Léger,Séparée par aménagement infranchissable,"Droit, en bas de la pente (creux)",28
+Dommage matériel ou Léger,Séparée par aménagement infranchissable,"Courbe, plat",31
+Dommage matériel ou Léger,Séparée par aménagement infranchissable,"Courbe, en haut de la pente",3
+Dommage matériel ou Léger,Séparée par aménagement infranchissable,"Courbe, dans la pente",2
+Dommage matériel ou Léger,Séparée par aménagement infranchissable,"Courbe, en bas de la pente (creux)",1
+Dommage matériel ou Léger,Autre,"Droit, plat",892
+Dommage matériel ou Léger,Autre,"Droit, en haut de la pente",10
+Dommage matériel ou Léger,Autre,"Droit, dans la pente",25
+Dommage matériel ou Léger,Autre,"Droit, en bas de la pente (creux)",13
+Dommage matériel ou Léger,Autre,"Courbe, plat",8
+Dommage matériel ou Léger,Autre,"Courbe, en haut de la pente",1
+Dommage matériel ou Léger,Autre,"Courbe, dans la pente",4

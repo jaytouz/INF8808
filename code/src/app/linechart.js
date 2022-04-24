@@ -5,6 +5,7 @@ import * as d3Annotation from 'd3-svg-annotation'
 
 function drawXAxis(svg, x, height){
     svg.append('g')
+        .attr('id', 'xAxisLineChart')
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x).tickSizeOuter(0))
 }
@@ -108,19 +109,19 @@ function getAnnotation (xScale, yScale, margin, graphSize, viz) {
                 note: { label: 'Vision Zéro' },
                 subject: {
                     y1: margin.top,
-                    y2: graphSize.height - margin.bottom
+                    y2: yScale(0)
                 },
                 y: margin.top,
-                data: { x: new Date('2016-01-01') } // position the x based on an x scale
+                data: {x:'2016-09-01'} // position the x based on an x scale
             },
                 {
                     note: { label: 'Début couvre-feu' },
                     subject: {
                         y1: margin.top,
-                        y2: graphSize.height - margin.bottom
+                        y2: yScale(0)
                     },
                     y: margin.top,
-                    data: { x: new Date('2020-03-14') }
+                    data: {x:'2020-03-14'}
                 }]
             break
         case 'annotation2':
@@ -137,7 +138,7 @@ function getAnnotation (xScale, yScale, margin, graphSize, viz) {
                         width: xScale(new Date('2020-03-14')) - xScale(new Date('2016-01-01'))
                     },
                     type: d3Annotation.annotationCalloutRect,
-                    x: xScale(new Date('01-01-2016')),
+                    x: xScale(new Date('2016-01-01')),
                     y: margin.top,
                     disable: ['connector'] // doesn't draw the connector
 
@@ -189,8 +190,9 @@ export function drawAnnotationsViz (g, xScale, yScale, annotations) {
 }
 
 export function initAnnotation(g, xScale, yScale1, yScale2, config){
-    const annotation1 = getAnnotation(xScale, yScale1, config, config.margin, 'annotation1')
-    const annotation2 = getAnnotation(xScale, yScale2, config, config.margin, 'annotation2')
+
+    const annotation1 = getAnnotation(xScale, yScale1, config.margin, config, 'annotation1')
+    const annotation2 = getAnnotation(xScale, yScale2, config.margin, config, 'annotation2')
     const a1 = drawAnnotationsViz(g, xScale, yScale1, annotation1)
     const a2 = drawAnnotationsViz(g, xScale, yScale2, annotation2)
     a1.style('opacity', 0)

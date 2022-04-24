@@ -88,6 +88,7 @@ function initBarAll(g, data, config, colorScale){
         .style('opacity', 0.9)
 
 
+
 }
 
 function initBarGraveMortel(g, data, config, colorScale){
@@ -107,7 +108,7 @@ function initBarGraveMortel(g, data, config, colorScale){
         .keys(subgroups)
         (data)
 
-    d3.select('#rect2')
+    const rect = d3.select('#rect2')
         .selectAll("g")
         // Enter in the stack data = loop key per key = group per group
         .data(stackedData)
@@ -145,7 +146,7 @@ function showBarChartAll(g, data, config, colorScale){
         .attr("width",x.bandwidth())
         .style('opacity', 1)
         .transition()
-        .delay(500)
+        .delay(0)
         .attr("y", function(d) { return y(d[1]) })
         .attr("height", function(d) {return y(d[0]) - y(d[1])})
 
@@ -197,13 +198,13 @@ function showGraveMortel(g, data, config, colorScale){
         .keys(subgroups)
         (data)
 
-    d3.select('#rect2')
+    const rect = d3.select('#rect2')
         .selectAll('rect')
         .attr("x", function(d) { return x(d.data.TYPE_VEHICULE); })
         .attr("width",x.bandwidth())
         .style('opacity', 1)
         .transition()
-        .delay(500)
+        .delay(0)
         .attr("y", function(d) { return y(d[1]) })
         .attr("height", function(d) {return y(d[0]) - y(d[1])})
 
@@ -238,18 +239,6 @@ function hideGraveMortel(g, data, config, colorScale){
 
 
 
-
-}
-
-function showRect(rect, y){
-    rect
-        .style('opacity', 1)
-        .attr("y", function(d) { return y(d[1]) })
-        .attr("height", function(d) {return y(d[0]) - y(d[1])})
-}
-
-function hideRect() {
-    d3.select('#rect1').style('opacity', 0)
 
 }
 

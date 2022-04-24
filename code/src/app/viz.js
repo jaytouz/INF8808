@@ -71,7 +71,7 @@ const g5 = svg5.append('g')
 export async function initialize() {
   let pset1 = await initializeParalleSet('./data/pset_env_route_vit.csv', '#2c4aad');
   DrawParalleleSet(g2, 1000, 2000, config.margin, pset1);
-  let pset2 = await initializeParalleSet('./data/pset_env_route_vit.csv', '#85ab77');
+  let pset2 = await initializeParalleSet('./data/pset_conf_aspect.csv', '#85ab77');
   DrawParalleleSet(g4, 1000, 2000, config.margin, pset2);
   let pset3 = await initializeParalleSet('./data/pset_cond_ext.csv', '#f68c1c');
   DrawParalleleSet(g5, 1000, 2000, config.margin, pset3);
@@ -119,16 +119,16 @@ export async function initialize() {
     () => {}
   ],
     [
+      () => {step1BarChart(g3, barchartData, config, colorScaleBar)}
+      ,
+      () => {step2BarChart(g3, barchartData, config, colorScaleBar)}
+    ],
+    [
       () => {step1LineChart(lineAll, annotation1)},
       () => {step2LineChart(lineAll, lineOther, lineCamion, annotation1)},
       () => {step3LineChart(lineAll, lineOther, lineCamion, annotation1, annotation2, lineCamionZoom, scaleY1)},
       () => {step4LineChart(lineOther, lineCamion, scaleY2, lineCamionZoom,annotation2)}
   ],
-    [
-      () => {step1BarChart(g3, barchartData, config, colorScaleBar)}
-      ,
-      () => {step2BarChart(g3, barchartData, config, colorScaleBar)}
-    ],
     [
       () => {selectNode(g2, -1)},
       () => {selectNode(g2, 2)},

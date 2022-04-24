@@ -1,18 +1,28 @@
 {
-  "title": "Titre de l'article",
+  "title": "La dangerosité des camions à Montréal",
   "authors": [
     {
-      "name": "AUTEUR_1",
+      "name": "Maxym Lamothe",
       "url": "https://www.ledevoir.com/auteur/AUTEUR_1_URL",
       "role": "ROLE_DESCRIPTION"
     },
     {
-      "name": "AUTEUR_2",
+      "name": "Hugo Palisson",
+      "url": "https://www.ledevoir.com/auteur/AUTEUR_2_URL",
+      "role": "ROLE_DESCRIPTION"
+    },
+    {
+      "name": "Gauthier Pezzoli",
+      "url": "https://www.ledevoir.com/auteur/AUTEUR_2_URL",
+      "role": "ROLE_DESCRIPTION"
+    },
+    {
+      "name": "Jérémie Tousignant",
       "url": "https://www.ledevoir.com/auteur/AUTEUR_2_URL",
       "role": "ROLE_DESCRIPTION"
     }
   ],
-  "date": "DATE_ICI",
+  "date": "24 Avril 2022",
   "update": "",
   "url": "https://www.ledevoir.com/documents/special/ICI",
   "description": "Mettre la description du site web ici.",

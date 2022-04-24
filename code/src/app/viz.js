@@ -15,6 +15,7 @@ import {
   initLine, step2LineChart, step3LineChart, step4LineChart, initAnnotation
 } from "./linechart";
 import {DrawParalleleSet, initializeParalleSet, selectNode} from "./paralleleSetChart"
+import {initBarChart, step1BarChart, step2BarChart} from "./barChart";
 
 
 const config = {
@@ -37,6 +38,7 @@ const svg1 = visContainer1.append('svg')
 const g1 = svg1.append('g')
   .attr('transform', `translate(${config.margin.left}, ${config.margin.top})`);
 
+
 const visContainer2 = d3.select('#viz2');
 const svg2 = visContainer2.append('svg')
   .attr('viewBox', `0 0 ${2400} ${1400}`)
@@ -44,14 +46,30 @@ const svg2 = visContainer2.append('svg')
 const g2 = svg2.append('g')
   .attr('transform', `translate(${config.margin.left}, ${config.margin.top})`);
 
+const visContainer3 = d3.select('#viz_bar_chart');
+const svg3 = visContainer3.append('svg')
+    .attr('viewBox', `0 0 ${fullWidth} ${fullHeight}`)
+    .attr('preserveAspectRatio', 'xMidYMid');
+const g3 = svg3.append('g')
+    .attr('transform', `translate(${config.margin.left}, ${config.margin.top})`);
+
 export async function initialize() {
   let pset1 = await initializeParalleSet('./data/pset_env_route_vit.csv', '#153e5e');
   DrawParalleleSet(g2, 1000, 2000, config.margin, pset1);
   let linechartDataAll = await d3.csv('./data/rolling7_viz1_all_vehicule_date.csv');
   let linechartDataType = await d3.csv('./data/rolling7_viz2_acc_by_type_date.csv');
-  // let linechartCamion = await d3.csv('./data/rolling7_viz3_acc_camion_date.csv');
- 
+  let barchartData = await d3.csv('./data/stackbar_pourcentage.csv')
+  // barchartData = barchartData.map(function (d) { return {key:d.Type, group:d.Gravite, value:+d.count, pourcentage:+d.pourcentage}})
 
+  var colorScaleBar = d3.scaleOrdinal()
+      .domain(['LEGER_MATERIEL', 'GRAVE','MORTEL'])
+      .range(['#ffb8b8','#ff4646','#9f0000'])
+
+  initBarChart(g3, barchartData, config, colorScaleBar)
+
+  map.buildMap('map');
+
+  // Line Chart
   let dataAll, dataOther, dataCamion
   [dataAll, dataOther, dataCamion] = processData(linechartDataAll, linechartDataType)
   const minY = 0
@@ -61,27 +79,20 @@ export async function initialize() {
     getScaleY(minY, maxScaleY1, config.height),
     getScaleY(minY, maxScaleY2, config.height)]
 
-
+  // Init Line chart
   drawLineChartAxis(g1, scaleX, scaleY1, config.width, config.height)
   const lineAll = initLine(dataAll, scaleX, scaleY1, g1, "#2c4aad")
   const lineOther = initLine(dataOther, scaleX, scaleY1, g1, "#000000")
   const lineCamion = initLine(dataCamion, scaleX, scaleY1, g1, "#8d072b")
   const lineCamionZoom = initLine(dataCamion, scaleX, scaleY2, g1, "#8d072b")
 
+  // Init annotations for line chart
   let [annotation1, annotation2] = initAnnotation(g1, scaleX, scaleY1, scaleY2, config)
 
 
-  // drawLineChartAxis(g1, scaleX, scaleY1, config.width, config.height)
-  // drawOneLine(linechartAll, scaleX, scaleY1, g1, "#2c4aad")
-  // transitionYAxis(scaleY2)
-  // drawOneLine(linechartCamion, scaleX, scaleY2, g1, "#ce0d0d")
-
-  map.buildMap('map');
 
   return [
   [
-    () => {},
-    () => {},
     () => {},
     () => {}
   ],
@@ -92,6 +103,11 @@ export async function initialize() {
       () => {step4LineChart(lineOther, lineCamion, scaleY2, lineCamionZoom,annotation2)}
   ],
     [
+      () => {step1BarChart(g3, barchartData, config, colorScaleBar)}
+      ,
+      () => {step2BarChart(g3, barchartData, config, colorScaleBar)}
+    ],
+    [
       () => {selectNode(g2, -1)},
       () => {selectNode(g2, 2)},
       () => {selectNode(g2, 3)},
@@ -99,3 +115,4 @@ export async function initialize() {
     ]
   ]
 }
+

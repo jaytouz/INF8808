@@ -49,7 +49,7 @@ const g3 = svg3.append('g')
 
 const visContainer2 = d3.select('#pset1');
 const svg2 = visContainer2.append('svg')
-    .attr('viewBox', `0 0 ${2400} ${1400}`)
+    .attr('viewBox', `0 0 ${2000} ${1400}`)
     .attr('preserveAspectRatio', 'xMidYMid');
 const g2 = svg2.append('g')
     .attr('transform', `translate(${config.margin.left}, ${config.margin.top})`);
@@ -63,7 +63,7 @@ const g2 = svg2.append('g')
 
 const visContainer5 = d3.select('#pset3');
 const svg5 = visContainer5.append('svg')
-    .attr('viewBox', `0 0 ${2400} ${1400}`)
+    .attr('viewBox', `0 0 ${2000} ${1400}`)
     .attr('preserveAspectRatio', 'xMidYMid');
 const g5 = svg5.append('g')
     .attr('transform', `translate(${config.margin.left}, ${config.margin.top})`);

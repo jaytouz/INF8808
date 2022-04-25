@@ -168,6 +168,35 @@ address {
   }
 }
 
+.text-leger{
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #ffb8b8;
+  text-decoration-thickness: 0.2rem;
+}
+
+.text-grave{
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #ff4646;
+  text-decoration-thickness: 0.2rem;
+}
+
+.text-mortel{
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #9f0000;
+  text-decoration-thickness: 0.2rem;
+}
+
+.text-camion{
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #2D0631AD;
+  text-decoration-thickness: 0.2rem;
+}
+
+
 .steps {
   position: relative;
   z-index: 2;
@@ -482,6 +511,8 @@ footer {
 
 .white-background {
   background-color: white;
+  opacity: 0.85;
+  border-radius: 10px;
 }
 
 // ***** Mobile *****

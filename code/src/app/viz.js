@@ -91,7 +91,7 @@ export async function initialize() {
 
 
   initBarChart(g3, barchartData, config, colorScaleBar)
-  helper.addTitle(g3, "Add title plz")
+  helper.addTitle(g3, "Proportion d'accident léger, grave et mortel selon le type de véhicule.")
 
   map.buildMap('map');
 
@@ -109,12 +109,12 @@ export async function initialize() {
   drawLineChartAxis(g1, scaleX, scaleY1, config.width, config.height, config.margin)
   const lineAll = initLine(dataAll, scaleX, scaleY1, g1, "#000000")
   const lineOther = initLine(dataOther, scaleX, scaleY1, g1, "#656565")
-  const lineCamion = initLine(dataCamion, scaleX, scaleY1, g1, "#8d072b")
-  const lineCamionZoom = initLine(dataCamion, scaleX, scaleY2, g1, "#8d072b")
+  const lineCamion = initLine(dataCamion, scaleX, scaleY1, g1, "#2D0631AD")
+  const lineCamionZoom = initLine(dataCamion, scaleX, scaleY2, g1, "#2D0631AD")
 
   // Init annotations for line chart
   let [annotation1, annotation2] = initAnnotation(g1, scaleX, scaleY1, scaleY2, config)
-  helper.addTitle(g1, "Add title plz")
+  helper.addTitle(g1, "Nombre d'accident par jour à Montréal selon les rapports de police.")
 
 
   const axisFontSize = "calc(8px + 0.6vw)";
@@ -128,7 +128,7 @@ export async function initialize() {
     //To control parallel sets font size
     //d3.selectAll(".graph-node>text").style("font-size", nodeFontSize);
   }
-  
+
 
   return [
   [

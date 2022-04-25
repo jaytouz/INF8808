@@ -5,12 +5,12 @@ export function addTitle(g, title){
     const width = g.node().getBBox().width;
 
     let text = g.append('text')
-        .text(title)
+        .html(title)
         .attr('class', 'graph-title')
-    
+
     text
     .style("font-size", titleFontSize)
     .attr('x', (width - text.node().getBBox().width)/2)
     .attr('y', -2*text.node().getBBox().height);
-    
+
 }

@@ -16,6 +16,7 @@ import {
 } from "./linechart";
 import {DrawParalleleSet, initializeParalleSet, selectNode} from "./paralleleSetChart"
 import {initBarChart, step1BarChart, step2BarChart} from "./barChart";
+import * as helper from "./helper.js";
 
 
 const config = {
@@ -71,11 +72,12 @@ const g5 = svg5.append('g')
 export async function initialize() {
   let pset1 = await initializeParalleSet('./data/pset_env_route_vit.csv', '#2c4aad');
   DrawParalleleSet(g2, 1000, 2000, config.margin, pset1);
+
   let pset2 = await initializeParalleSet('./data/pset_conf_aspect.csv', '#85ab77');
   DrawParalleleSet(g4, 1000, 2000, config.margin, pset2);
+
   let pset3 = await initializeParalleSet('./data/pset_cond_ext.csv', '#f68c1c');
   DrawParalleleSet(g5, 1000, 2000, config.margin, pset3);
-
 
 
   let linechartDataAll = await d3.csv('./data/rolling7_viz1_all_vehicule_date.csv');
@@ -87,7 +89,9 @@ export async function initialize() {
       .domain(['LEGER_MATERIEL', 'GRAVE','MORTEL'])
       .range(['#ffb8b8','#ff4646','#9f0000'])
 
+
   initBarChart(g3, barchartData, config, colorScaleBar)
+  helper.addTitle(g3, "Add title plz")
 
   map.buildMap('map');
 
@@ -110,8 +114,21 @@ export async function initialize() {
 
   // Init annotations for line chart
   let [annotation1, annotation2] = initAnnotation(g1, scaleX, scaleY1, scaleY2, config)
+  helper.addTitle(g1, "Add title plz")
 
 
+  const axisFontSize = "calc(8px + 0.6vw)";
+  //const nodeFontSize = 18;
+
+  //Ensure all axis ticks label, titles and node text have the adequate font size
+  function updateAxisTickSize(){
+    d3.selectAll(".tick>text").style("font-size", axisFontSize);
+    d3.selectAll("#xAxisBar>.tick>text").attr("dy", "1em");
+
+    //To control parallel sets font size
+    //d3.selectAll(".graph-node>text").style("font-size", nodeFontSize);
+  }
+  
 
   return [
   [
@@ -119,15 +136,15 @@ export async function initialize() {
     () => {}
   ],
     [
-      () => {step1BarChart(g3, barchartData, config, colorScaleBar)}
+      () => {step1BarChart(g3, barchartData, config, colorScaleBar);updateAxisTickSize();}
       ,
-      () => {step2BarChart(g3, barchartData, config, colorScaleBar)}
+      () => {step2BarChart(g3, barchartData, config, colorScaleBar);updateAxisTickSize();}
     ],
     [
-      () => {step1LineChart(lineAll, annotation1)},
-      () => {step2LineChart(lineAll, lineOther, lineCamion, annotation1)},
-      () => {step3LineChart(lineAll, lineOther, lineCamion, annotation1, annotation2, lineCamionZoom, scaleY1)},
-      () => {step4LineChart(lineOther, lineCamion, scaleY2, lineCamionZoom,annotation2)}
+      () => {step1LineChart(lineAll, annotation1);updateAxisTickSize();},
+      () => {step2LineChart(lineAll, lineOther, lineCamion, annotation1);updateAxisTickSize();},
+      () => {step3LineChart(lineAll, lineOther, lineCamion, annotation1, annotation2, lineCamionZoom, scaleY1);updateAxisTickSize();},
+      () => {step4LineChart(lineOther, lineCamion, scaleY2, lineCamionZoom,annotation2);updateAxisTickSize();}
   ],
     [
       () => {selectNode(g2, -1)},

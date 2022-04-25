@@ -27,6 +27,7 @@ body {
   min-height: 100%;
   // sass-lint:disable no-important
   overflow-x: hidden !important;
+  background-color: #c5c7b7;
 }
 
 body,
@@ -42,6 +43,7 @@ h4,
 h5,
 h6 {
   font-family: $serif-font-family;
+  margin-top: 0.8vh;
 }
 
 a {
@@ -116,7 +118,7 @@ address {
     line-height: 1.22222em;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid black;
     transition: border-color 0.2s ease-out;
 
     &:hover {
@@ -359,7 +361,7 @@ main {
       padding: 1em;
       height: 90vh;
       width: 100%;
-      max-width: 1000px;
+      //max-width: 1000px;
       max-height: 1000px;
       min-width: 300px;
       min-height: 300px;
@@ -384,7 +386,7 @@ main {
       section {
         max-width: 450px;
         padding: $step-padding;
-        background-color: $white;
+        background-color: rgba(255,255,255,0.85);;
         border: 1px solid $step-border-color;
       }
 
@@ -458,8 +460,8 @@ footer {
     font-family: $sans-serif-font-family;
     font-size: 0.9em;
     color: $text-light-color;
-    background-color: $footer-background-color;
-    border-top: 1px solid $light-gray;
+    //background-color: $footer-background-color;
+    //border-top: 1px solid $light-gray;
 
     p {
       margin: 0;
@@ -468,6 +470,18 @@ footer {
       color: inherit;
     }
   }
+}
+
+
+.city-background {
+  background-image: url("../img/VilleMontreal.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.white-background {
+  background-color: white;
 }
 
 // ***** Mobile *****
@@ -582,6 +596,7 @@ footer {
       font-family: "bruneldeck";
       font-size: 5rem;
       margin: 0;
+      margin-top: 0.8vh;
       padding-bottom: 10px;
       line-height: 60%;
       -webkit-font-feature-settings: "caps" 1;

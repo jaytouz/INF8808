@@ -3,7 +3,7 @@ import d3Tip from 'd3-tip'
 import { sankey as Sankey } from 'd3-sankey'
 import { sankeyLinkHorizontal } from 'd3-sankey'
 
-const otherColor = '#CCC'
+const otherColor = 'whitesmoke'
 let selectionColor = '#940d45'
 
 export async function initializeParalleSet(dataPath, color = '#940d45') {
@@ -53,7 +53,8 @@ export async function DrawParalleleSet(g, height, width, margin, data) {
   return g
 }
 
-export function selectNode(g, index) {
+export function selectNode(g, index, color) {
+  selectionColor = color
   var nodes = g.selectAll('.graph-node').data()
   //console.log("nodes : ", nodes);
   var data = index >= 0 ? nodes[index] : null

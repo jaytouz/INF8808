@@ -6,4 +6,5 @@ Notre équipe, était composé de Gauthier Pezzoli, Hugo Palisson, Jérémie Tou
 Nous avons eu le plaisir d'être jumelé avec l'équipe du Devoir qui nous a proposé d'aborder la place des camions dans les accidents répertoriés par la ville de Montréal. 
 
 source des données: https://donnees.montreal.ca/ville-de-montreal/collisions-routieres
+
 article : https://jaytouz.github.io/INF8808/

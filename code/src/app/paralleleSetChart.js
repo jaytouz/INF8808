@@ -3,7 +3,7 @@ import d3Tip from 'd3-tip'
 import { sankey as Sankey } from 'd3-sankey'
 import { sankeyLinkHorizontal } from 'd3-sankey'
 
-const otherColor = '#CCC'
+const otherColor = 'whitesmoke'
 let selectionColor = '#940d45'
 
 export async function initializeParalleSet(dataPath, color = '#940d45') {

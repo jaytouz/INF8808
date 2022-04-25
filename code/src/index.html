@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <!--
+    SCROLLYTELLING LE DEVOIR
+
+    Gabarit pour scrollytelling à utiliser au Devoir.
+
+    Développé par:
+      - Jean-Philippe Corbeil (jpcorbeil@ledevoir.com)
+      - Antoine Béland (abeland@ledevoir.com)
+  -->
+
+  <title><%= htmlWebpackPlugin.options.title %> | Le Devoir</title><!-- Titre de l'onglet (ne pas modifier) -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!--
+    Le processus pour les métas va comme suit:
+
+    1 - Faire une page small.jpg pour les réseaux sociaux et le partage.
+    2 - Mettre cette image dans le dossier assets/img.
+    3 - Mettre à jour les informations dans le fichier 'config.json'.
+
+    * Généralement fait une fois que le code est prêt à être publié.
+    ** NE PAS MODIFIER LES MÉTAS DIRECTEMENT DANS LE FICHIER INDEX.HTML **
+  -->
+  <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+
+  <meta property="og:url" content="<%= htmlWebpackPlugin.options.url %>">
+  <meta property="og:site_name" content="Le Devoir">
+  <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="<%= htmlWebpackPlugin.options.image %>">
+  <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>">
+
+  <meta property="article:publisher" content="https://www.facebook.com/ledevoir">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ledevoir">
+  <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.description %>">
+  <meta name="twitter:creator" content="Le Devoir">
+  <!-- at least 280px x 150px for Twitter (image must be < 1MB) -->
+  <meta name="twitter:image:src" content="<%= htmlWebpackPlugin.options.image %>">
+  <meta name="twitter:domain" content="https://ledevoir.com">
+  <%= htmlWebpackPlugin.options.authorMetas %>
+
+  <script>
+    var dataLayer = [{
+      pageTitle: "<%= htmlWebpackPlugin.options.title %>" + " | Le Devoir",
+      siteSection: "visualisation",
+      articleAuthor: "<%= htmlWebpackPlugin.options.authorsGA %>",
+      articleName: "<%= htmlWebpackPlugin.options.title %>"
+    }];
+  </script>
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+
+</head>
+<body>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+  <script>
+  (function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("https://experience.tinypass.com/xbuilder/experience/load?aid=rRgpSk2Ipu");
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (typeof tp !== 'undefined') {
+            tp.push(["setContentCreated", "<%= htmlWebpackPlugin.options.date %>"]);
+            tp.push(["setContentSection", 'Visualisation']);
+            tp.push(["setContentIsNative", false]);
+            tp.push(["setCustomVariable", "paywallHit", false]);
+            tp.push(["setTags", ["<%= htmlWebpackPlugin.options.keywords %>"]]);
+        }
+    });
+    </script>
+
+<header>
+  <ul class="pull-right social-buttons">
+    <li>
+      <button data-type="twitter" aria-label="Partager sur Twitter">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </button>
+    </li>
+    <li>
+      <button>
+        <a class="facebook" target="_blank" href="https://www.facebook.com/share.php?u=<%= htmlWebpackPlugin.options.url %>">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </button>
+    </li>
+  </ul>
+  <a href="https://www.ledevoir.com">
+    <img alt="Le Devoir" src="assets/img/logo-devoir.svg">
+  </a>
+  <!-- TITRE DE L'ARTICLE EN RAPPEL (ne pas modifer) -->
+  <h1 class="article-reminder"><%= htmlWebpackPlugin.options.title %></h1>
+  <div class="progress"></div>
+</header>
+<main>
+  <section class="intro-section">
+    <h1><%= htmlWebpackPlugin.options.title %></h1> <!-- TITRE DE L'ARTICLE (ne pas modifer) -->
+    <address> <!-- AUTEURS ET DATE DE PUBLICATION (ne pas modifer) -->
+      <div class="authors">Par <%= htmlWebpackPlugin.options.authors %></div>
+      <div class="date"><%= htmlWebpackPlugin.options.date %></div>
+    </address>
+    <p>  <!-- AMORCE (à modifier) -->
+      Alors que la ville de Montréal souhaite appliquer le plan d’action Vision Zéro, soit d'avoir zéro décès
+      et blessé grave sur ses routes d'ici à 2040, les accidents continuent à être nombreux.
+    </p>
+  </section>
+  <section class="full-page with-numbers city-background">
+    <div class="numbers">
+      <div class="inner white-background">
+        <h2>204 010</h2>
+        <small>
+          C'est le nombre d'accidents recensé sur l'île de Montréal par les rapports de police entre 2012 et 2020
+        </small>
+      </div>
+    </div>
+  </section>
+  <section class="viz-section">
+    <div class="steps">
+      <section>
+        <h1>La conséquence des accidents</h1>
+        <p>Ces accidents ont entraîné la mort de 243 et en ont blessé 53 666.
+          C'est pour cette raison que la ville cherche des solutions, car chaque décès est inacceptable.
+        </p>
+      </section>
+      <section>
+        <p>Cette approche a été annoncé par Denis Coderre en 2016. Il encourage notamment la réduction de la
+        vitesse de transport, une du nombre de zones cyclables, la répression des comportements délinquants et
+        l'amélioration de 10 intersections par an.</p>
+      </section>
+    </div>
+    <div class="viz" id="map"></div>
+  </section>
+
+  <section class="viz-section">
+    <div class="steps">
+      <section>
+        <h1>Attention aux camions...</h1>
+        <p>Il y a 9 fois moins d'accidents impliquant un camion (20 288) que d'accident n'impliquant
+          pas de camion (183 722). Dans les deux cas, 99% des accidents occasionnent <span class="text-leger">des blessures légères ou
+            des dégâts matériels</span>.
+        </p>
+      </section>
+      <section>
+        <p>Par contre, il y a 2.5 fois plus de chance qu'un accident soit <span class="text-mortel">mortel</span>
+          chez les camions (0.24%), que chez les
+        accidents n'impliquant pas de camion (0.10%)</p>
+      </section>
+    </div>
+    <div class="viz" id="viz_bar_chart"></div>
+  </section>
+
+  <section class="full-page viz-section">
+    <div class="steps">
+      <section>
+        <h1>Vision Zéro</h1>
+        <p>En 2018, Montréal dépose enfin un plan d'action pour atteindre l'objectif Vision Zéro
+        en 2040.</p>
+      </section>
+      <section>
+        <p>En 2019, avant la crise COVID, il y avait environ 53 accidents par jour contre 87 par jour en 2012, ce qui
+          représente une baisse de 39%. Même si 78% des accidents ne font aucune victime, mais seulement des dégâts
+          matériels, le nombre de victimes a seulement chuté de 15%</p>
+      </section>
+      <section>
+        <p>L’arrivée de la COVID-19 début 2020 à perturber le trafic ce qui a eu un impact positif sur le nombre
+          d’accidents pour tous les types de véhicules.</p>
+      </section>
+      <section>
+        <p>Si le projet Vision Zéro est annoncé en 2016, son impact ne se fait pas sentir tout de suite...
+          Le nombre d'accidents impliquant les <span class="text-camion">camions</span> a même augmenté jusqu'à l'arrivée de la pandémie.</p>
+      </section>
+    </div>
+    <div class="viz" id="viz_line_chart"></div>
+  </section>
+
+<!--  <section class="full-page city-background-winter">-->
+<!--    <div>-->
+
+<!--    </div>-->
+<!--  </section>-->
+
+  <section class="full-page with-numbers city-background-winter ">
+    <div class="numbers">
+      <div class="inner">
+        <h2>174</h2>
+        <small>
+          C'est le nombre d'accidents grave ou mortel impliquant un camion sur l'île de Montréal entre 2012 et 2020
+        </small>
+      </div>
+    </div>
+  </section>
+  <section class="text-section larger-padding-top larger-padding-bottom">
+    <p>
+      <b>Pour mieux prévenir ce genre d'incident, nous vous proposons d'observer le contexte dans lequel les 174
+      grave ou mortel impliquant un camion se sont produits.</b>
+      <br>
+      <br>
+      Un accident peut se produire dans un type de quartier, ou un type de route et même dans une zone de vitesse différente.
+    </p>
+  </section>
+  <section class="full-page viz-section">
+    <div class="steps">
+      <section>
+        <h1>Les zones résidentielles trop touchées...</h1>
+        <p>Près du tier des accidents grave ou mortel impliquant un camion se sont déroulé dans un secteur résidentiel.
+        </p>
+      </section>
+      <section>
+        <p>La moitié de ces accidents sont sur des chemins résidentiels avec des vitesses inférieures à 50 km/h.
+          La règlementation sur les limites de vitesses ne semble donc pas suffisante pour réduire ce genre de
+          situation tragique.</p>
+      </section>
+      <section>
+        <p>Les zones commerciales accessibles par des artères principales sont la scène de la majorité des accidents
+          grave ou mortel.</p>
+      </section>
+      <section>
+        <p>Il est donc grand temps d'encourager l'utilisation de transport plus léger pour se rendre dans ces zones.</p>
+      </section>
+    </div>
+    <div class="viz" id="pset1"></div>
+  </section>
+
+  <section class="text-section larger-padding-top larger-padding-bottom">
+    <p>
+      Est-ce qu'il y a des conditions externes comme la météo ou la condition de la route à l'endroit de l'accident qui
+      pourrait favoriser ce genre d'accident?
+    </p>
+  </section>
+  <section class="full-page viz-section">
+    <div class="steps">
+      <section>
+        <h1>Attention aux bonnes conditions de conduite...</h1>
+        <p>Les accidents graves ou mortels impliquant un camion ne se déroulent pas dans des
+          cas d'intempéries comme on pourrait l'imaginer. </p>
+      </section>
+      <section>
+        <p>Il s'agit plutôt des belles journées, des routes sèches et en bons états qui bouleverse des vies.
+        <br><br>
+          On peut sans doute imaginer que les personnes sont moins attentives lorsqu'il n'y a pas une présence imminente
+          au danger.
+        </p>
+      </section>
+    </div>
+    <div class="viz" id="pset3"></div>
+  </section>
+</main>
+<footer>
+  <div>
+    <!-- MENTION À L'INFOGRAPHIE OU LA COLLABORATION. À MODIFIER AU BESOIN. -->
+    <p>
+<!--      <%= htmlWebpackPlugin.options.authorsRoles %>-->
+      Cet article a été développer dans le cadre du cours de visualisation de données (INF8808) de Polytechnique
+      Montréal à l'hiver 2022
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript" src="assets/lib/social.min.js"></script>
+</body>
+</html>

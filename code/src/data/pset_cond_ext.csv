@@ -1,0 +1,172 @@
+Gravite,Meteo,Etat Surface,Etat Chaussee,Eclairage,count
+Grave ou Mortel,Clair,Sèche,En bon état,Jour et demi-obscurité,91
+Grave ou Mortel,Clair,Sèche,En bon état,Jour et demi-obscurité,3
+Grave ou Mortel,Clair,Sèche,En bon état,Nuit et chemin éclairé,5
+Grave ou Mortel,Clair,Sèche,En construction/en réparation,Jour et demi-obscurité,2
+Grave ou Mortel,Clair,Mouillée,En bon état,Jour et demi-obscurité,4
+Grave ou Mortel,Clair,Mouillée,En bon état,Nuit et chemin éclairé,2
+Grave ou Mortel,Clair,Gadoue/neige fondante,En bon état,Jour et demi-obscurité,1
+Grave ou Mortel,Clair,Gadoue/neige fondante,En bon état,Nuit et chemin éclairé,1
+Grave ou Mortel,Clair,Enneigée,En bon état,Jour et demi-obscurité,3
+Grave ou Mortel,Clair,Enneigée,En bon état,Nuit et chemin éclairé,1
+Grave ou Mortel,Clair,Glacée,En bon état,Jour et demi-obscurité,2
+Grave ou Mortel,Clair,Autre,Autre,Jour et demi-obscurité,1
+Grave ou Mortel,Couvert (nuageux/sombre),Sèche,En bon état,Jour et demi-obscurité,16
+Grave ou Mortel,Couvert (nuageux/sombre),Sèche,En bon état,Nuit et chemin éclairé,1
+Grave ou Mortel,Couvert (nuageux/sombre),Sèche,Trous/nids-de-poule/cahots,Nuit et chemin non éclairé,1
+Grave ou Mortel,Couvert (nuageux/sombre),Mouillée,En bon état,Jour et demi-obscurité,7
+Grave ou Mortel,Couvert (nuageux/sombre),Mouillée,En bon état,Jour et demi-obscurité,1
+Grave ou Mortel,Couvert (nuageux/sombre),Mouillée,En bon état,Nuit et chemin éclairé,3
+Grave ou Mortel,Couvert (nuageux/sombre),Gadoue/neige fondante,Trous/nids-de-poule/cahots,Nuit et chemin éclairé,1
+Grave ou Mortel,Couvert (nuageux/sombre),Enneigée,En bon état,Jour et demi-obscurité,1
+Grave ou Mortel,Couvert (nuageux/sombre),Enneigée,En bon état,Jour et demi-obscurité,1
+Grave ou Mortel,Couvert (nuageux/sombre),Enneigée,En bon état,Nuit et chemin éclairé,1
+Grave ou Mortel,Pluie/bruine,Mouillée,En bon état,Jour et demi-obscurité,3
+Grave ou Mortel,Pluie/bruine,Mouillée,En bon état,Nuit et chemin éclairé,1
+Grave ou Mortel,Pluie/bruine,Mouillée,En bon état,Nuit et chemin non éclairé,1
+Grave ou Mortel,Averse (pluie forte),Mouillée,En bon état,Jour et demi-obscurité,1
+Grave ou Mortel,Averse (pluie forte),Accumulation d’eau (aquaplanage),En bon état,Jour et demi-obscurité,1
+Grave ou Mortel,"Vent fort (pas de poudrerie, pas de pluie)",Mouillée,En bon état,Jour et demi-obscurité,1
+Grave ou Mortel,Neige/grêle,Mouillée,En bon état,Jour et demi-obscurité,1
+Grave ou Mortel,Neige/grêle,Mouillée,En bon état,Nuit et chemin éclairé,1
+Grave ou Mortel,Neige/grêle,Enneigée,En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Clair,Sèche,En bon état,Jour et demi-obscurité,1175
+Dommage matériel ou Léger,Clair,Sèche,En bon état,Jour et demi-obscurité,25
+Dommage matériel ou Léger,Clair,Sèche,En bon état,Nuit et chemin éclairé,114
+Dommage matériel ou Léger,Clair,Sèche,En bon état,Nuit et chemin non éclairé,4
+Dommage matériel ou Léger,Clair,Sèche,En construction/en réparation,Jour et demi-obscurité,17
+Dommage matériel ou Léger,Clair,Sèche,En construction/en réparation,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Clair,Sèche,En construction/en réparation,Nuit et chemin non éclairé,1
+Dommage matériel ou Léger,Clair,Sèche,Trous/nids-de-poule/cahots,Jour et demi-obscurité,10
+Dommage matériel ou Léger,Clair,Sèche,Trous/nids-de-poule/cahots,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Clair,Sèche,Autre,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Clair,Mouillée,En bon état,Jour et demi-obscurité,114
+Dommage matériel ou Léger,Clair,Mouillée,En bon état,Jour et demi-obscurité,5
+Dommage matériel ou Léger,Clair,Mouillée,En bon état,Nuit et chemin éclairé,21
+Dommage matériel ou Léger,Clair,Mouillée,Trous/nids-de-poule/cahots,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Clair,Mouillée,Autre,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Clair,Accumulation d’eau (aquaplanage),En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Clair,"Sable, gravier sur la chaussée",En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,"Sable, gravier sur la chaussée",En construction/en réparation,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,"Sable, gravier sur la chaussée",Trous/nids-de-poule/cahots,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,"Sable, gravier sur la chaussée",Dénivellation,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,Gadoue/neige fondante,En bon état,Jour et demi-obscurité,13
+Dommage matériel ou Léger,Clair,Gadoue/neige fondante,En bon état,Nuit et chemin éclairé,2
+Dommage matériel ou Léger,Clair,Gadoue/neige fondante,Trous/nids-de-poule/cahots,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Clair,Enneigée,En bon état,Jour et demi-obscurité,41
+Dommage matériel ou Léger,Clair,Enneigée,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,Enneigée,En bon état,Nuit et chemin éclairé,17
+Dommage matériel ou Léger,Clair,Enneigée,Autre,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,Neige durcie,En bon état,Jour et demi-obscurité,10
+Dommage matériel ou Léger,Clair,Neige durcie,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,Neige durcie,En bon état,Nuit et chemin éclairé,3
+Dommage matériel ou Léger,Clair,Neige durcie,Trous/nids-de-poule/cahots,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Clair,Neige durcie,Autre,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,Glacée,En bon état,Jour et demi-obscurité,23
+Dommage matériel ou Léger,Clair,Glacée,En bon état,Nuit et chemin éclairé,2
+Dommage matériel ou Léger,Clair,Glacée,En bon état,Nuit et chemin non éclairé,1
+Dommage matériel ou Léger,Clair,Glacée,En construction/en réparation,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,Glacée,Autre,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Clair,Boueuse,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,Boueuse,En construction/en réparation,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,Boueuse,Dénivellation,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,Boueuse,Autre,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,Autre,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Clair,Autre,Dénivellation,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Sèche,En bon état,Jour et demi-obscurité,188
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Sèche,En bon état,Jour et demi-obscurité,7
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Sèche,En bon état,Nuit et chemin éclairé,18
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Sèche,En construction/en réparation,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Sèche,Ornières/affaissement,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Sèche,Trous/nids-de-poule/cahots,Jour et demi-obscurité,5
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Sèche,Trous/nids-de-poule/cahots,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Sèche,Dénivellation,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Sèche,Autre,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Sèche,Autre,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Mouillée,En bon état,Jour et demi-obscurité,66
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Mouillée,En bon état,Jour et demi-obscurité,10
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Mouillée,En bon état,Nuit et chemin éclairé,17
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Mouillée,Autre,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Accumulation d’eau (aquaplanage),En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),"Sable, gravier sur la chaussée",En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Gadoue/neige fondante,En bon état,Jour et demi-obscurité,4
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Gadoue/neige fondante,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Gadoue/neige fondante,En bon état,Nuit et chemin éclairé,2
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Gadoue/neige fondante,Trous/nids-de-poule/cahots,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Enneigée,En bon état,Jour et demi-obscurité,14
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Enneigée,En bon état,Jour et demi-obscurité,3
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Enneigée,En bon état,Nuit et chemin éclairé,6
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Neige durcie,En bon état,Jour et demi-obscurité,5
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Neige durcie,En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Glacée,En bon état,Jour et demi-obscurité,6
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Glacée,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Glacée,En bon état,Nuit et chemin éclairé,3
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Glacée,Autre,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Couvert (nuageux/sombre),Autre,Dénivellation,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Brouillard/brume,Sèche,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Brouillard/brume,Mouillée,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Brouillard/brume,Mouillée,En bon état,Nuit et chemin éclairé,2
+Dommage matériel ou Léger,Pluie/bruine,Sèche,En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Pluie/bruine,Mouillée,En bon état,Jour et demi-obscurité,99
+Dommage matériel ou Léger,Pluie/bruine,Mouillée,En bon état,Jour et demi-obscurité,15
+Dommage matériel ou Léger,Pluie/bruine,Mouillée,En bon état,Nuit et chemin éclairé,28
+Dommage matériel ou Léger,Pluie/bruine,Mouillée,En construction/en réparation,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Pluie/bruine,Mouillée,En construction/en réparation,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Pluie/bruine,Mouillée,Fissures importantes,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Pluie/bruine,Mouillée,Trous/nids-de-poule/cahots,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Pluie/bruine,Mouillée,Dénivellation,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Pluie/bruine,Gadoue/neige fondante,En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Pluie/bruine,Gadoue/neige fondante,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Pluie/bruine,Gadoue/neige fondante,En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Pluie/bruine,Enneigée,En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Pluie/bruine,Glacée,En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Averse (pluie forte),Mouillée,En bon état,Jour et demi-obscurité,10
+Dommage matériel ou Léger,Averse (pluie forte),Mouillée,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Averse (pluie forte),Mouillée,En bon état,Nuit et chemin éclairé,2
+Dommage matériel ou Léger,Averse (pluie forte),Mouillée,Dénivellation,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Averse (pluie forte),Accumulation d’eau (aquaplanage),En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Averse (pluie forte),Accumulation d’eau (aquaplanage),En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,"Vent fort (pas de poudrerie, pas de pluie)",Sèche,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,"Vent fort (pas de poudrerie, pas de pluie)",Mouillée,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,"Vent fort (pas de poudrerie, pas de pluie)",Gadoue/neige fondante,En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,"Vent fort (pas de poudrerie, pas de pluie)",Glacée,En bon état,Jour et demi-obscurité,3
+Dommage matériel ou Léger,"Vent fort (pas de poudrerie, pas de pluie)",Glacée,En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Neige/grêle,Sèche,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Neige/grêle,Mouillée,En bon état,Jour et demi-obscurité,7
+Dommage matériel ou Léger,Neige/grêle,Mouillée,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Neige/grêle,Mouillée,En bon état,Nuit et chemin éclairé,6
+Dommage matériel ou Léger,Neige/grêle,Accumulation d’eau (aquaplanage),En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Neige/grêle,Gadoue/neige fondante,En bon état,Jour et demi-obscurité,5
+Dommage matériel ou Léger,Neige/grêle,Gadoue/neige fondante,En bon état,Jour et demi-obscurité,3
+Dommage matériel ou Léger,Neige/grêle,Gadoue/neige fondante,En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Neige/grêle,Enneigée,En bon état,Jour et demi-obscurité,51
+Dommage matériel ou Léger,Neige/grêle,Enneigée,En bon état,Jour et demi-obscurité,4
+Dommage matériel ou Léger,Neige/grêle,Enneigée,En bon état,Nuit et chemin éclairé,19
+Dommage matériel ou Léger,Neige/grêle,Enneigée,En construction/en réparation,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Neige/grêle,Enneigée,Autre,Jour et demi-obscurité,3
+Dommage matériel ou Léger,Neige/grêle,Enneigée,Autre,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Neige/grêle,Enneigée,Autre,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Neige/grêle,Neige durcie,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Neige/grêle,Neige durcie,En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Neige/grêle,Neige durcie,En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Neige/grêle,Glacée,En bon état,Jour et demi-obscurité,8
+Dommage matériel ou Léger,Neige/grêle,Glacée,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Neige/grêle,Glacée,En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Neige/grêle,Glacée,Dénivellation,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Neige/grêle,Glacée,Autre,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Neige/grêle,Glacée,Autre,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Poudrerie/tempête de neige,Enneigée,En bon état,Jour et demi-obscurité,11
+Dommage matériel ou Léger,Poudrerie/tempête de neige,Enneigée,En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Poudrerie/tempête de neige,Enneigée,En bon état,Nuit et chemin éclairé,3
+Dommage matériel ou Léger,Poudrerie/tempête de neige,Enneigée,Autre,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Poudrerie/tempête de neige,Enneigée,Autre,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Poudrerie/tempête de neige,Neige durcie,En bon état,Jour et demi-obscurité,1
+Dommage matériel ou Léger,Poudrerie/tempête de neige,Neige durcie,En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Poudrerie/tempête de neige,Glacée,En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Verglas,Mouillée,En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Verglas,Neige durcie,En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Verglas,Glacée,En bon état,Jour et demi-obscurité,2
+Dommage matériel ou Léger,Verglas,Glacée,En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Autre,Sèche,En bon état,Nuit et chemin éclairé,1
+Dommage matériel ou Léger,Autre,Sèche,En bon état,Nuit et chemin non éclairé,1
+Dommage matériel ou Léger,Autre,Autre,En bon état,Nuit et chemin éclairé,1

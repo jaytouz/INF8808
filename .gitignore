@@ -1,3 +1,6 @@
-data/
 notebook/output/*.png
 
+code/node_modules/*
+code/node_modules
+code/.cache
+code/.cache/*

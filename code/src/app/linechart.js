@@ -10,6 +10,17 @@ function drawXAxis(svg, x, height){
         .call(d3.axisBottom(x).tickSizeOuter(0))
 }
 
+function addXlabel(width, margin){
+    d3.select('#xAxisLineChart')
+        .append("text")
+        .attr("x", width/1.7)
+        .attr("y", margin.bottom/1.5)
+        .attr('font-size', '1.5em')
+        .attr("fill", "currentColor")
+        .attr("text-anchor", "end")
+        .text("Date du rapport de l'accident")
+}
+
 export function getScaleX(dates, width){
     return d3.scaleTime()
         .domain(d3.extent(dates))
@@ -20,6 +31,18 @@ function drawYAxis(svg, y){
     svg.append("g")
         .attr('id', 'yAxisLineChart')
         .call(d3.axisLeft().scale(y))
+}
+
+function addYlabel(margin){
+    d3.select('#yAxisLineChart')
+        .append("text")
+        .attr("x", - margin.left * 4.5 )
+        .attr("y", - margin.left/2)
+        .attr('font-size', '1.5em')
+        .attr("fill", "currentColor")
+        .attr("text-anchor", "start")
+        .attr("transform", "rotate(-90)")
+        .text("Nombre d'accidents par jour (moyenne roulante 7 jours)")
 }
 
 export function getScaleY(min, max, height){
@@ -46,29 +69,13 @@ export function processData(data1, data2){
     return [data1, other, camion]
 }
 
-export function drawLineChartAxis(g, x, y, width, height){
+export function drawLineChartAxis(g, x, y, width, height, margin){
     drawXAxis(g,x, height)
     drawYAxis(g, y)
+    addYlabel(margin)
+    addXlabel(width, margin)
 }
 
-/**
- * Positions the x axis label and y axis label.
- *
- * @param {*} g The d3 Selection of the graph's g SVG element
- * @param {number} width The width of the graph
- * @param {number} height The height of the graph
- */
-export function positionLabels (g, width, height) {
-    // TODO : Position axis labels
-    var labelDate = g.selectAll('.x.axis-text')
-    var labelAccident = g.selectAll('.y.axis-text')
-
-    labelDate.attr('x', width / 2)
-    labelDate.attr('y', height + 40)
-
-    labelAccident.attr('x', -40)
-    labelAccident.attr('y', height / 2)
-}
 
 /**
  * Draws the circles on the graph.

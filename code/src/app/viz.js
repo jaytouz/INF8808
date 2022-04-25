@@ -104,7 +104,7 @@ export async function initialize() {
     getScaleY(minY, maxScaleY2, config.height)]
 
   // Init Line chart
-  drawLineChartAxis(g1, scaleX, scaleY1, config.width, config.height)
+  drawLineChartAxis(g1, scaleX, scaleY1, config.width, config.height, config.margin)
   const lineAll = initLine(dataAll, scaleX, scaleY1, g1, "#000000")
   const lineOther = initLine(dataOther, scaleX, scaleY1, g1, "#656565")
   const lineCamion = initLine(dataCamion, scaleX, scaleY1, g1, "#8d072b")

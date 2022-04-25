@@ -386,7 +386,7 @@ main {
       section {
         max-width: 450px;
         padding: $step-padding;
-        background-color: $white;
+        background-color: rgba(255,255,255,0.85);;
         border: 1px solid $step-border-color;
       }
 

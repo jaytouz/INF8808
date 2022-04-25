@@ -27,7 +27,7 @@ function appendYAxis(g){
 
 function drawXAxis(width, height){
     const x = d3.scaleBand()
-        .domain(['CAMION', 'SANS_CAMION'])
+        .domain(['Camion', 'Sans camion'])
         .range([0, width])
         .padding([0.2])
     d3.select('#xAxisBar').call(d3.axisBottom(x).tickSize(0))
